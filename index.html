@@ -1,525 +1,258 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Little Things — Private notes for the people who matter</title>
-    <meta
-      name="description"
-      content="Little Things is a private relationship memory app for saving small notes, gift ideas, moments, and gentle nudges about the people who matter. No account. No Little Things cloud. No CRM energy."
-    />
-    <meta name="theme-color" content="#FDFCF8" />
-    <meta property="og:title" content="Remember people by the little things" />
-    <meta
-      property="og:description"
-      content="A private, local-first relationship memory app for thoughtful notes, moments, gift ideas, and gentle nudges."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://getlittlethings.app/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://getlittlethings.app/" />
-    <link rel="icon" href="./assets/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <script>document.documentElement.className += " js";</script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Little Things",
-        "applicationCategory": "LifestyleApplication",
-        "operatingSystem": "iOS, Android",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "description": "A private relationship memory app for the small notes, gift ideas, moments, and gentle nudges about the people who matter."
-      }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div class="grain" aria-hidden="true"></div>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noted &amp; Known: notes on the people you love</title>
+  <meta name="description" content="Noted &amp; Known is a private iPhone app for keeping notes on the people you love. No account, no cloud, and free for up to eight people.">
+  <link rel="canonical" href="https://notedandknown.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Noted &amp; Known">
+  <meta property="og:title" content="Noted &amp; Known: notes on the people you love">
+  <meta property="og:description" content="A private iPhone app for keeping what you learn about the people you love. No account, no cloud, and free for up to eight people.">
+  <meta property="og:url" content="https://notedandknown.app/">
+  <meta property="og:image" content="https://notedandknown.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Noted and Known logo and a phone showing the Home screen.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ECEDE8">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/ZenMaruGothic-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.className += ' js';</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Noted & Known","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://notedandknown.app/","description":"A private iPhone app for keeping notes on the people you love.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Singh Studio"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
 
-    <!-- ============================ NAV ============================ -->
-    <header class="site-nav" data-nav aria-label="Primary navigation">
-      <a class="brand-mark" href="#top" aria-label="Little Things, home">
-        <span class="seal" aria-hidden="true">
-          <span class="seal-dot" style="--c: var(--observation)"></span>
-          <span class="seal-dot" style="--c: var(--interest)"></span>
-          <span class="seal-dot" style="--c: var(--gift)"></span>
-          <span class="seal-dot" style="--c: var(--moment)"></span>
-          <span class="seal-dot" style="--c: var(--support)"></span>
-        </span>
-        <span class="brand-word">Little <em>things</em></span>
-      </a>
-      <nav class="desktop-links" aria-label="Page sections">
-        <a href="#how">How it works</a>
-        <a href="#glints">The five</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a class="nav-button" href="#get">
-        <span>Get the app</span>
-        <i aria-hidden="true">&nearr;</i>
-      </a>
-      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
+<header class="top">
+  <div class="in">
+    <a class="brand" href="./"><img src="assets/cut/logo.svg" alt="" width="30" height="30">Noted &amp; Known</a>
+    <nav aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#price">Price</a>
+      <a href="#faq">Questions</a>
+    </nav>
+  </div>
+</header>
 
-    <div class="menu-overlay" data-menu-overlay aria-hidden="true">
-      <button class="menu-close" type="button" aria-label="Close menu" data-menu-close>
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <nav aria-label="Mobile navigation">
-        <a href="#how">How it works</a>
-        <a href="#glints">The five</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#faq">FAQ</a>
-        <a href="#get">Get the app</a>
-      </nav>
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="in">
+      <div>
+        <img class="mark" src="assets/cut/logo.svg" alt="The Noted and Known logo, five cut-paper dots" width="96" height="96">
+        <h1 id="hero-title">Noted <span class="hl">&amp; Known</span></h1>
+        <p class="lede">A private place on your iPhone to keep what you learn about the people you love, so you remember it when it counts.</p>
+        <p class="store" data-store-cta>Coming back to the App Store soon</p>
+        <p class="hero-note">Free for up to eight people. No account needed.</p>
+      </div>
+      <figure class="phone"><img src="assets/screens/home.webp" width="640" height="1387" alt="The Home screen: a follow-up for Aroha tomorrow, this week's reminders and a birthday, and a person who has gone quiet."></figure>
     </div>
+  </section>
 
-    <a class="back-to-top" href="#top" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-back-to-top>
-      <span>Top</span>
-      <i aria-hidden="true">&uarr;</i>
-    </a>
-
-    <main id="main">
-      <!-- ============================ HERO ============================ -->
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow" data-reveal>
-              <span class="eyebrow-dots" aria-hidden="true">
-                <i style="--c: var(--observation)"></i>
-                <i style="--c: var(--interest)"></i>
-                <i style="--c: var(--gift)"></i>
-                <i style="--c: var(--moment)"></i>
-                <i style="--c: var(--support)"></i>
-              </span>
-              <span>Private · on your device</span>
-            </p>
-
-            <h1 id="hero-title" class="hero-title" data-reveal>
-              Remember people by the little <em>things</em>.
-            </h1>
-
-            <p class="hero-lede" data-reveal data-reveal-delay="1">
-              Little Things is a private relationship memory app for the small
-              notes, gift ideas, moments, and gentle nudges that help people feel
-              known. No account. No Little Things cloud. No CRM energy.
-            </p>
-
-            <div class="hero-cta" data-reveal data-reveal-delay="2">
-              <a class="store-button store-apple" href="https://apps.apple.com/app/id6766800274" aria-label="Download on the App Store">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.05 12.54c-.02-2.13 1.74-3.15 1.82-3.2-1-1.45-2.54-1.65-3.09-1.67-1.31-.13-2.56.77-3.23.77-.66 0-1.69-.75-2.78-.73-1.43.02-2.75.83-3.48 2.11-1.49 2.58-.38 6.39 1.06 8.48.7 1.02 1.54 2.17 2.63 2.13 1.06-.04 1.46-.68 2.74-.68 1.27 0 1.64.68 2.76.66 1.14-.02 1.86-1.04 2.56-2.07.81-1.19 1.14-2.34 1.16-2.4-.03-.01-2.22-.85-2.24-3.38zM14.93 6.25c.58-.71.98-1.69.87-2.67-.84.03-1.86.56-2.46 1.26-.54.62-1.01 1.62-.88 2.57.94.07 1.89-.47 2.47-1.16z"/></svg>
-                <span><small>Download on the</small><strong>App Store</strong></span>
-              </a>
-              <a class="store-button store-play" href="https://play.google.com/store/apps/details?id=com.singhstudio.littlethings" aria-label="Get it on Google Play">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M3.6 2.4 13.4 12 3.6 21.6c-.36-.2-.6-.58-.6-1.04V3.44c0-.46.24-.84.6-1.04z" fill="var(--observation)"/>
-                  <path d="m13.4 12 3.4 3.2-9.7 5.5L13.4 12z" fill="var(--gift)"/>
-                  <path d="M7.1 3.3 13.4 12 7.1 20.7 7.1 3.3z" fill="var(--support)"/>
-                  <path d="M17.9 9.45 14.9 12l3 2.55 2.5-1.42c.74-.42.74-1.84 0-2.26L17.9 9.45z" fill="var(--moment)"/>
-                  <path d="M16.8 8.8 13.4 12l3.4-3.2 1.1.65L16.8 8.8z" fill="var(--interest)"/>
-                </svg>
-                <span><small>Get it on</small><strong>Google Play</strong></span>
-              </a>
-            </div>
-
-            <p class="hero-trust" data-reveal data-reveal-delay="3">
-              No account · No cloud · No AI · <em>Just your people</em>
-            </p>
-          </div>
-
-          <div class="hero-phone" data-reveal data-reveal-delay="1">
-            <div class="device">
-              <div class="device-bezel">
-                <div class="device-screen">
-                  <img src="./assets/screenshots/app-home.webp" alt="The Little Things home screen — a warm greeting and a gentle nudge to reach out to someone who's gone quiet." width="1206" height="2622" decoding="async" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================ PROBLEM ============================ -->
-      <section class="intro" id="why" aria-labelledby="intro-title">
-        <p class="eyebrow" data-reveal><span class="eyebrow-rule" aria-hidden="true"></span><span>Why it exists</span></p>
-        <h2 id="intro-title" class="intro-title" data-reveal>
-          The details that matter are usually the
-          <span class="ink-shift">easiest to lose</span>.
-        </h2>
-        <p class="intro-lede" data-reveal>
-          A friend mentions a trip they’re nervous about. Your dad says his knee
-          has been bothering him. Someone hints at a gift idea months before their
-          birthday. These aren’t tasks — they’re little pieces of context that make
-          people feel remembered. Little Things gives them somewhere private to live.
-        </p>
-        <div class="glint-notes" data-reveal aria-hidden="true">
-          <span class="glint-note"><i style="background: var(--observation)"></i>Nervous about the trip</span>
-          <span class="glint-note"><i style="background: var(--support)"></i>Dad’s knee, again</span>
-          <span class="glint-note"><i style="background: var(--gift)"></i>The novel she keeps quoting</span>
-        </div>
-      </section>
-
-      <!-- ============================ THE FIVE GLINTS (colour section) ============================ -->
-      <section class="glints" id="glints" data-glints aria-labelledby="glints-title">
-        <header class="glints-head">
-          <p class="eyebrow eyebrow-on-dark" data-reveal>
-            <span class="seal seal-lg" aria-hidden="true">
-              <span class="seal-dot" style="--c: var(--observation)"></span>
-              <span class="seal-dot" style="--c: var(--interest)"></span>
-              <span class="seal-dot" style="--c: var(--gift)"></span>
-              <span class="seal-dot" style="--c: var(--moment)"></span>
-              <span class="seal-dot" style="--c: var(--support)"></span>
-            </span>
-            <span>The five</span>
-          </p>
-          <h2 id="glints-title" class="glints-title" data-reveal>
-            A glint is one small thing worth <em>remembering</em>.
-          </h2>
-          <p class="glints-sub" data-reveal>
-            Five kinds of noticing, one colour each. Tap one, write a line, done.
-            Together they’re how you’ll come to see the people you care about.
-          </p>
-        </header>
-
-        <ol class="glint-rows" data-glint-rows>
-          <li class="glint-row" style="--c: var(--observation); --c-text: var(--observation-text)" data-glint-row>
-            <span class="glint-index" aria-hidden="true">01</span>
-            <span class="glint-orb" aria-hidden="true"></span>
-            <div class="glint-row-copy">
-              <h3 class="glint-name">Observation</h3>
-              <p class="glint-def">Something you noticed.</p>
-              <p class="glint-example">“Always orders the same seat by the window if it’s free.”</p>
-            </div>
-          </li>
-          <li class="glint-row" style="--c: var(--interest); --c-text: var(--interest-text)" data-glint-row>
-            <span class="glint-index" aria-hidden="true">02</span>
-            <span class="glint-orb" aria-hidden="true"></span>
-            <div class="glint-row-copy">
-              <h3 class="glint-name">Interest</h3>
-              <p class="glint-def">Something they love.</p>
-              <p class="glint-example">“Keeps circling back to slow ceramic glazing lately.”</p>
-            </div>
-          </li>
-          <li class="glint-row" style="--c: var(--gift); --c-text: var(--gift-text)" data-glint-row>
-            <span class="glint-index" aria-hidden="true">03</span>
-            <span class="glint-orb" aria-hidden="true"></span>
-            <div class="glint-row-copy">
-              <h3 class="glint-name">Gift idea</h3>
-              <p class="glint-def">Something to give.</p>
-              <p class="glint-example">“A linen market tote would land well for her birthday.”</p>
-            </div>
-          </li>
-          <li class="glint-row" style="--c: var(--moment); --c-text: var(--moment-text)" data-glint-row>
-            <span class="glint-index" aria-hidden="true">04</span>
-            <span class="glint-orb" aria-hidden="true"></span>
-            <div class="glint-row-copy">
-              <h3 class="glint-name">Moment</h3>
-              <p class="glint-def">Something shared.</p>
-              <p class="glint-example">“The long lunch where we finally properly caught up.”</p>
-            </div>
-          </li>
-          <li class="glint-row" style="--c: var(--support); --c-text: var(--support-text)" data-glint-row>
-            <span class="glint-index" aria-hidden="true">05</span>
-            <span class="glint-orb" aria-hidden="true"></span>
-            <div class="glint-row-copy">
-              <h3 class="glint-name">Support</h3>
-              <p class="glint-def">Something to hold.</p>
-              <p class="glint-example">“Big presentation on Thursday — check in beforehand.”</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <!-- ============================ HOW IT WORKS / THE REAL SCREENS ============================ -->
-      <section class="how" id="how" aria-labelledby="how-title">
-        <header class="how-head">
-          <p class="eyebrow" data-reveal><span class="eyebrow-rule" aria-hidden="true"></span><span>How it works</span></p>
-          <h2 id="how-title" class="how-title" data-reveal>A quiet place for the people in your life.</h2>
-        </header>
-
-        <div class="showcase">
-          <article class="showcase-row" data-reveal>
-            <div class="showcase-copy">
-              <span class="step-num">01</span>
-              <h3>Start with the people who matter.</h3>
-              <p>Keep a private page for each person — and group them into circles: inner circle, family, friends, however you think of them. Add someone in a tap; no import required.</p>
-            </div>
-            <figure class="showcase-shot">
-              <div class="device">
-                <div class="device-bezel">
-                  <div class="device-screen">
-                    <img src="./assets/screenshots/app-people.webp" alt="The People screen — your handful of people, grouped into circles." width="1206" height="2622" loading="lazy" decoding="async" />
-                  </div>
-                </div>
-              </div>
-            </figure>
-          </article>
-
-          <article class="showcase-row is-flipped" data-reveal>
-            <div class="showcase-copy">
-              <span class="step-num">02</span>
-              <h3>Every little thing, in one place.</h3>
-              <p>Each person’s page gathers their glints, gift ideas, the moments worth keeping, and what to follow up on. Organised around people — never tasks, never a pipeline.</p>
-            </div>
-            <figure class="showcase-shot">
-              <div class="device">
-                <div class="device-bezel">
-                  <div class="device-screen">
-                    <img src="./assets/screenshots/app-person.webp" alt="A person's page — their glints, catch-up notes, chronicle, and gift ideas, gathered in one place." width="1206" height="2622" loading="lazy" decoding="async" />
-                  </div>
-                </div>
-              </div>
-            </figure>
-          </article>
-
-          <article class="showcase-row" data-reveal>
-            <div class="showcase-copy">
-              <span class="step-num">03</span>
-              <h3>Keep the moments, dated.</h3>
-              <p>When something deserves more than a passing note, write a chronicle — a private, dated entry you’ll be glad you kept. The record you’ll want to look back on later.</p>
-            </div>
-            <figure class="showcase-shot">
-              <div class="device">
-                <div class="device-bezel">
-                  <div class="device-screen">
-                    <img src="./assets/screenshots/app-chronicle.webp" alt="The Chronicle screen — dated moments kept privately, newest first." width="1206" height="2622" loading="lazy" decoding="async" />
-                  </div>
-                </div>
-              </div>
-            </figure>
-          </article>
-
-          <article class="showcase-row is-flipped" data-reveal>
-            <div class="showcase-copy">
-              <span class="step-num">04</span>
-              <h3>A mirror, not a scoreboard.</h3>
-              <p>The You screen shows where your attention has been — your activity over the last three months, who you’ve been close to, and a gentle nudge toward anyone who’s gone quiet. Reflective, never gamified.</p>
-            </div>
-            <figure class="showcase-shot">
-              <div class="device">
-                <div class="device-bezel">
-                  <div class="device-screen">
-                    <img src="./assets/screenshots/app-you.webp" alt="The You screen — an activity heatmap and your attention across circles, shown as reflection rather than a score." width="1206" height="2622" loading="lazy" decoding="async" />
-                  </div>
-                </div>
-              </div>
-            </figure>
-          </article>
-        </div>
-      </section>
-
-      <!-- ============================ PULL-QUOTE ============================ -->
-      <section class="quote-band" aria-label="Why Little Things exists">
-        <span class="quote-mark" aria-hidden="true">
-          <i style="background: var(--observation)"></i>
-          <i style="background: var(--interest)"></i>
-          <i style="background: var(--gift)"></i>
-          <i style="background: var(--moment)"></i>
-          <i style="background: var(--support)"></i>
-        </span>
-        <blockquote data-reveal>Caring about people is not the same as <em>managing</em> them.</blockquote>
-        <cite data-reveal>Why Little Things exists</cite>
-      </section>
-
-      <!-- ============================ PRIVACY ============================ -->
-      <section class="privacy" id="privacy" aria-labelledby="privacy-title">
-        <div class="privacy-inner">
-          <div class="privacy-head">
-            <div class="privacy-head-copy">
-              <p class="eyebrow eyebrow-on-dark" data-reveal><span class="eyebrow-rule" aria-hidden="true"></span><span>Privacy</span></p>
-              <h2 id="privacy-title" class="privacy-title" data-reveal>
-                Private by design.<br />Plain about the <em>limits</em>.
-              </h2>
-              <p class="privacy-lede" data-reveal>
-                Little Things doesn’t need an account and keeps no cloud copy of your
-                relationship notes. Your data lives on your device. You can export a
-                plain-JSON snapshot whenever you need to — but export isn’t sync, and
-                exported files aren’t encrypted.
-              </p>
-            </div>
-            <figure class="privacy-shot" data-reveal data-reveal-delay="1">
-              <div class="device">
-                <div class="device-bezel">
-                  <div class="device-screen">
-                    <img src="./assets/screenshots/app-lock.webp" alt="Settings — the privacy lock and local-only controls that keep everything on your device." width="1206" height="2622" loading="lazy" decoding="async" />
-                  </div>
-                </div>
-              </div>
-            </figure>
-          </div>
-
-          <div class="privacy-grid">
-            <article class="promise" data-reveal>
-              <span class="promise-num">01</span>
-              <h3>No account, ever.</h3>
-              <p>No sign-up, no login, no profile to manage. You open the app and it’s just yours.</p>
-            </article>
-            <article class="promise" data-reveal data-reveal-delay="1">
-              <span class="promise-num">02</span>
-              <h3>No Little Things cloud.</h3>
-              <p>Your people, notes, and photos never leave your device. There’s no server that receives your relationship notes.</p>
-            </article>
-            <article class="promise" data-reveal data-reveal-delay="2">
-              <span class="promise-num">03</span>
-              <h3>Local reminders only.</h3>
-              <p>Birthday and quiet-relationship nudges are scheduled by your device — local reminders, not push tracking from us.</p>
-            </article>
-            <article class="promise" data-reveal data-reveal-delay="3">
-              <span class="promise-num">04</span>
-              <h3>Lock and shield.</h3>
-              <p>A biometric lock and an app-switcher privacy shield prevent casual snooping. They help with snooping, not encryption — and we say so.</p>
-            </article>
-          </div>
-
-          <p class="privacy-foot" data-reveal>
-            The full detail is in the <a href="./docs/privacy.html">privacy policy</a>
-            and <a href="./docs/terms.html">terms</a>.
-          </p>
-        </div>
-      </section>
-
-      <!-- ============================ WHO IT'S FOR ============================ -->
-      <section class="fit" id="fit" aria-labelledby="fit-title">
-        <header class="fit-head">
-          <p class="eyebrow" data-reveal><span class="eyebrow-rule" aria-hidden="true"></span><span>Who it’s for</span></p>
-          <h2 id="fit-title" class="fit-title" data-reveal>For people who care, not people who want a <em>pipeline</em>.</h2>
-        </header>
-        <div class="fit-grid">
-          <div class="fit-col fit-yes" data-reveal>
-            <h3>A good fit if…</h3>
-            <ul>
-              <li>You already keep little notes about the people you love.</li>
-              <li>You want gift ideas and passing comments to still be there later.</li>
-              <li>You care about privacy and local-first tools.</li>
-              <li>You like a gentle nudge, but hate guilt-driven apps.</li>
-            </ul>
-          </div>
-          <div class="fit-col fit-no" data-reveal data-reveal-delay="1">
-            <h3>Probably not if…</h3>
-            <ul>
-              <li>You want a sales CRM or a networking tool.</li>
-              <li>You want relationship scores or streaks.</li>
-              <li>You need cloud sync across every device today.</li>
-              <li>You want a task manager pointed at people.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================ FAQ ============================ -->
-      <section class="faq" id="faq" aria-labelledby="faq-title">
-        <header class="faq-head">
-          <p class="eyebrow" data-reveal><span class="eyebrow-rule" aria-hidden="true"></span><span>Questions</span></p>
-          <h2 id="faq-title" class="faq-title" data-reveal>The honest answers.</h2>
-        </header>
-        <div class="faq-list" data-reveal>
-          <details class="faq-item">
-            <summary>Is Little Things a CRM?<i aria-hidden="true">+</i></summary>
-            <p>No. It’s for personal relationship memory — not sales pipelines, networking workflows, or follow-up quotas. If you want a CRM, this app should feel intentionally wrong for you.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Where does my data go?<i aria-hidden="true">+</i></summary>
-            <p>Your relationship notes stay on your device. There’s no Little Things account and no Little Things cloud copy of your people or notes.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Can I export my data?<i aria-hidden="true">+</i></summary>
-            <p>Yes. Export creates a point-in-time JSON snapshot. It isn’t automatic backup or sync, and exported files aren’t encrypted by Little Things — so store them somewhere private.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Does it sync across devices?<i aria-hidden="true">+</i></summary>
-            <p>Not currently. Little Things is local-first and doesn’t offer cloud sync today.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Is the app lock encryption?<i aria-hidden="true">+</i></summary>
-            <p>No. App lock helps prevent casual snooping in the app — it isn’t database encryption. We’d rather be plain about that than overclaim.</p>
-          </details>
-          <details class="faq-item">
-            <summary>What does it cost?<i aria-hidden="true">+</i></summary>
-            <p>Free for up to eight people. One one-time purchase — Little Things Full — unlocks unlimited people, custom labels, saved views, and the curated themes. No subscription, ever.</p>
-          </details>
-        </div>
-      </section>
-
-      <!-- ============================ GET THE APP (finale) ============================ -->
-      <section class="get" id="get" aria-labelledby="get-title">
-        <div class="get-constellation" aria-hidden="true">
-          <svg viewBox="0 0 200 200" fill="none" data-constellation>
-            <polyline class="con-line"
-              points="60,68 132,48 152,108 88,148 36,132"
-              stroke-dasharray="1.6 3.6" />
-            <g class="con-dots">
-              <circle cx="60"  cy="68"  r="27"   style="--c: var(--observation); --fromx: -46px; --fromy: -34px" data-con-dot="0" />
-              <circle cx="132" cy="48"  r="16.4" style="--c: var(--interest);    --fromx:  40px; --fromy: -58px" data-con-dot="1" />
-              <circle cx="152" cy="108" r="22"   style="--c: var(--gift);        --fromx:  64px; --fromy:  12px" data-con-dot="2" />
-              <circle cx="88"  cy="148" r="24"   style="--c: var(--moment);      --fromx: -14px; --fromy:  62px" data-con-dot="3" />
-              <circle cx="36"  cy="132" r="14"   style="--c: var(--support);     --fromx: -72px; --fromy:  40px" data-con-dot="4" />
-            </g>
-          </svg>
-        </div>
-
-        <h2 id="get-title" class="get-title" data-reveal>Remember people by the little <em>things</em>.</h2>
-        <p class="get-lede" data-reveal>
-          Free for up to eight people. One one-time purchase for unlimited —
-          never a subscription.
-        </p>
-
-        <div class="hero-cta get-cta" data-reveal>
-          <a class="store-button store-apple" href="https://apps.apple.com/app/id6766800274" aria-label="Download on the App Store">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.05 12.54c-.02-2.13 1.74-3.15 1.82-3.2-1-1.45-2.54-1.65-3.09-1.67-1.31-.13-2.56.77-3.23.77-.66 0-1.69-.75-2.78-.73-1.43.02-2.75.83-3.48 2.11-1.49 2.58-.38 6.39 1.06 8.48.7 1.02 1.54 2.17 2.63 2.13 1.06-.04 1.46-.68 2.74-.68 1.27 0 1.64.68 2.76.66 1.14-.02 1.86-1.04 2.56-2.07.81-1.19 1.14-2.34 1.16-2.4-.03-.01-2.22-.85-2.24-3.38zM14.93 6.25c.58-.71.98-1.69.87-2.67-.84.03-1.86.56-2.46 1.26-.54.62-1.01 1.62-.88 2.57.94.07 1.89-.47 2.47-1.16z"/></svg>
-            <span><small>Download on the</small><strong>App Store</strong></span>
-          </a>
-          <a class="store-button store-play" href="https://play.google.com/store/apps/details?id=com.singhstudio.littlethings" aria-label="Get it on Google Play">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M3.6 2.4 13.4 12 3.6 21.6c-.36-.2-.6-.58-.6-1.04V3.44c0-.46.24-.84.6-1.04z" fill="var(--observation)"/>
-              <path d="m13.4 12 3.4 3.2-9.7 5.5L13.4 12z" fill="var(--gift)"/>
-              <path d="M7.1 3.3 13.4 12 7.1 20.7 7.1 3.3z" fill="var(--support)"/>
-              <path d="M17.9 9.45 14.9 12l3 2.55 2.5-1.42c.74-.42.74-1.84 0-2.26L17.9 9.45z" fill="var(--moment)"/>
-              <path d="M16.8 8.8 13.4 12l3.4-3.2 1.1.65L16.8 8.8z" fill="var(--interest)"/>
-            </svg>
-            <span><small>Get it on</small><strong>Google Play</strong></span>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <!-- ============================ FOOTER ============================ -->
-    <footer class="site-footer">
-      <div class="footer-top">
-        <a class="footer-brand" href="#top">
-          <span class="seal" aria-hidden="true">
-            <span class="seal-dot" style="--c: var(--observation)"></span>
-            <span class="seal-dot" style="--c: var(--interest)"></span>
-            <span class="seal-dot" style="--c: var(--gift)"></span>
-            <span class="seal-dot" style="--c: var(--moment)"></span>
-            <span class="seal-dot" style="--c: var(--support)"></span>
-          </span>
-          <span class="brand-word">Little <em>things</em></span>
-        </a>
-        <nav aria-label="Footer links">
-          <a href="#how">How it works</a>
-          <a href="#glints">The five</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#faq">FAQ</a>
-          <a href="./docs/privacy.html">Privacy policy</a>
-          <a href="./docs/terms.html">Terms</a>
-        </nav>
+  <section class="why" aria-labelledby="why-title">
+    <div class="in">
+      <div>
+        <p class="eyebrow">Why it exists</p>
+        <h2 id="why-title">The things people tell you <span class="hl">slip away</span></h2>
+        <p style="margin-top:28px">A friend says she is nervous about a trip next month. Your dad mentions that his knee has been playing up. Someone drops a hint about a birthday present months before the day. You mean to remember all of it, and a few weeks later you can only recall that they said something.</p>
+        <p>Noted &amp; Known gives each of those details a place on that person's page. It is there when you see them, and when you wonder whether to get in touch.</p>
       </div>
-      <div class="footer-coda">
-        <p class="footer-line">Remember people by the little things.</p>
-        <p class="footer-by">Made with care by Singh Studio · Aotearoa New Zealand</p>
-      </div>
-    </footer>
+      <ul class="slips">
+        <li>
+          <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#1E9E62" d="M22 18 C38 2 70 4 86 20 C100 36 98 62 84 78 C72 92 52 88 44 76 C38 67 28 72 20 68 C4 60 6 34 22 18 Z"/></svg>
+          <p style="margin:0"><strong>Nervous about the trip</strong><span>She is flying to Rarotonga next month and does not enjoy the flights. Worth a message the night before.</span></p>
+        </li>
+        <li>
+          <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#2447D8" d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z"/></svg>
+          <p style="margin:0"><strong>Dad's knee</strong><span>He rubs it when he stands up and says it is fine. The physio appointment is on Monday.</span></p>
+        </li>
+        <li>
+          <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#F2558C" d="M10 34 C16 14 40 6 62 9 L86 18 C98 30 97 58 88 74 C76 94 46 98 26 90 C8 82 3 56 10 34 Z"/></svg>
+          <p style="margin:0"><strong>The birthday hint</strong><span>In June she said she would love a proper tent for next summer. Her birthday is in November.</span></p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <script src="./script.js"></script>
-  </body>
+  <section class="kinds" aria-labelledby="kinds-title">
+    <div class="in">
+      <p class="eyebrow">Five kinds of note</p>
+      <h2 id="kinds-title">Each note has a kind, and each kind has a <span class="hl">colour</span></h2>
+      <ul>
+        <li class="kind" style="--k:#2447D8;--on:#fff;--i:0;--r:-1.2deg">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
+          <b>Observation</b><small>Something you noticed.</small>
+          <q>Orders the same seat by the window whenever it is free.</q>
+        </li>
+        <li class="kind" style="--k:#12B3C7;--on:#101318;--i:1;--r:1deg">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
+          <b>Interest</b><small>Something they love.</small>
+          <q>Keeps circling back to slow ceramic glazing.</q>
+        </li>
+        <li class="kind" style="--k:#F2558C;--on:#101318;--i:2;--r:-0.6deg">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
+          <b>Gift idea</b><small>Something to give.</small>
+          <q>A linen market tote would suit her for her birthday.</q>
+        </li>
+        <li class="kind" style="--k:#FF7A1F;--on:#101318;--i:3;--r:1.4deg">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
+          <b>Moment</b><small>Something you shared.</small>
+          <q>The long lunch where we finally caught up properly.</q>
+        </li>
+        <li class="kind" style="--k:#1E9E62;--on:#101318;--i:4;--r:-1deg">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
+          <b>Support</b><small>Something they might need a hand with.</small>
+          <q>Big presentation on Thursday, so check in beforehand.</q>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="in">
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-title">Write a line, and it is on their <span class="hl">page</span></h2>
+      <ol>
+        <li>
+          <span class="num">1</span>
+          <figure class="phone"><img src="assets/screens/person.webp" width="640" height="1387" loading="lazy" alt="A person's page for Dad, with his drink, his birthday, what is coming up, and notes marked by kind."></figure>
+          <div><h3>A page for each person</h3><p>Notes sit on the page of the person they are about, along with their birthday and anything coming up.</p></div>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <figure class="phone"><img src="assets/screens/people.webp" width="640" height="1387" loading="lazy" alt="The People screen, grouped into Inner Circle and Family, with a filter for each circle."></figure>
+          <div><h3>Everyone in their own circles</h3><p>Group people however you think of them. Add someone by hand, or pick them from your contacts.</p></div>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <figure class="phone"><img src="assets/screens/chronicle.webp" width="640" height="1387" loading="lazy" alt="The Chronicle, a list of dated entries such as A quiet Sunday at the bach."></figure>
+          <div><h3>Keep the longer moments</h3><p>When something deserves more than a line, write a dated entry in the Chronicle and read it again later.</p></div>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <figure class="phone"><img src="assets/screens/you.webp" width="640" height="1387" loading="lazy" alt="The You screen, with counts of people, notes and moments, and a grid of the last three months of activity."></figure>
+          <div><h3>See where your attention goes</h3><p>The You screen shows the last three months, which is a useful nudge toward someone you have lost touch with.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="skins" id="skins" aria-labelledby="skins-title">
+    <div class="in">
+      <p class="eyebrow">Skins</p>
+      <h2 id="skins-title">Six skins, each with its own <span class="hl">paper</span></h2>
+      <p style="margin-top:24px">Graph Paper comes free. Noted &amp; Known Full adds Harbor Mist, Wild Rose, Evergreen, Print and Colour Block. All six have a light and a dark version.</p>
+      <ul>
+        <li><figure><div class="phone"><img src="assets/screens/skin-graph-paper.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Graph Paper skin: dotted paper and a yellow highlight."></div><figcaption>Graph Paper<span>Free</span></figcaption></figure></li>
+        <li><figure><div class="phone"><img src="assets/screens/skin-harbor-mist.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Harbor Mist skin: cool, misty paper."></div><figcaption>Harbor Mist<span>Full</span></figcaption></figure></li>
+        <li><figure><div class="phone"><img src="assets/screens/skin-wild-rose.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Wild Rose skin: soft rose paper with a pink highlight."></div><figcaption>Wild Rose<span>Full</span></figcaption></figure></li>
+        <li><figure><div class="phone"><img src="assets/screens/skin-evergreen.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Evergreen skin: graph paper in leafy greens."></div><figcaption>Evergreen<span>Full</span></figcaption></figure></li>
+        <li><figure><div class="phone"><img src="assets/screens/skin-print.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Print skin: white paper with heavier headings."></div><figcaption>Print<span>Full</span></figcaption></figure></li>
+        <li><figure><div class="phone"><img src="assets/screens/skin-colour-block.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Colour Block skin: headings on a full-width band of colour."></div><figcaption>Colour Block<span>Full</span></figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="in">
+      <div>
+        <p class="eyebrow">Privacy</p>
+        <h2 id="privacy-title">Your notes stay on <span class="hl">your device</span></h2>
+        <p style="margin-top:24px">There is no account and no Noted &amp; Known cloud, and no server receives what you write. This is what that means in practice, including the places where it has limits.</p>
+        <ul>
+          <li>No account is needed to use the app.</li>
+          <li>Your people, notes and photos never leave your device.</li>
+          <li>If the app crashes, a technical crash report (stack trace, device model, OS version) is sent so the bug can be fixed. It never includes your notes, names, photos or identity.</li>
+          <li>Product analytics are bucketed counts tied to a random install id. They show which screens get used and never what you wrote.</li>
+          <li>Contacts are only read if you choose to import, and you pick each person. Only their name, photo and birthday are copied in, once. You can add every person by hand without touching your address book.</li>
+          <li>Reminders are local notifications scheduled by your device, not push notifications from a server.</li>
+        </ul>
+        <h3>The limits</h3>
+        <ul>
+          <li>A biometric or passcode lock keeps out casual snooping, and a privacy cover hides your notes in the app switcher. The lock is not encryption.</li>
+          <li>You can export your data as a JSON file at any time. The file is not encrypted, so keep it somewhere private.</li>
+          <li>Restoring from an export is manual and replaces what is on the device. It is not cloud sync or automatic backup.</li>
+        </ul>
+        <p style="margin-top:24px">The full detail is in the <a href="docs/privacy.html">privacy policy</a> and the <a href="docs/terms.html">terms</a>.</p>
+      </div>
+      <figure class="phone"><img src="assets/screens/privacy.webp" width="640" height="1387" loading="lazy" alt="Settings, showing Noted and Known Full, and Storage set to Local only, with a note that export files are not encrypted."></figure>
+    </div>
+  </section>
+
+  <section class="price" id="price" aria-labelledby="price-title">
+    <div class="in">
+      <p class="eyebrow">Price</p>
+      <h2 id="price-title">Free for eight people, then <span class="hl">one purchase</span></h2>
+      <div class="cols">
+        <div class="tier">
+          <h3>Free</h3>
+          <p>Up to eight people, every kind of note, the Chronicle, reminders, export, and the Graph Paper skin.</p>
+        </div>
+        <div class="tier">
+          <h3>Noted &amp; Known Full</h3>
+          <p>A single purchase, with no subscription.</p>
+          <ul>
+            <li>Unlimited people</li>
+            <li>Custom labels and saved views</li>
+            <li>Five more skins</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="in">
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-title">Honest answers</h2>
+      <details>
+        <summary>Is it a CRM?</summary>
+        <p>No. It is for remembering the people in your life, and it has no sales pipelines, follow-up quotas or networking features. If you are looking for a CRM, this will feel like the wrong tool.</p>
+      </details>
+      <details>
+        <summary>Where does my data go?</summary>
+        <p>Your notes stay on your device. There is no account and no Noted &amp; Known cloud, so nothing you write is sent to a server of ours. The app does send crash reports and basic usage counts, as described in the privacy section above, and neither contains anything you wrote.</p>
+      </details>
+      <details>
+        <summary>Can I export my data?</summary>
+        <p>Yes. Export saves a JSON file of everything in the app at that moment. It is not an automatic backup, and the file is not encrypted, so keep it somewhere private.</p>
+      </details>
+      <details>
+        <summary>Does it sync across devices?</summary>
+        <p>Not at the moment. Noted &amp; Known keeps everything on the device it is installed on, so there is no cloud sync.</p>
+      </details>
+      <details>
+        <summary>Is the app lock encryption?</summary>
+        <p>No. The lock helps keep casual snoopers out of the app, but it does not encrypt your data. We would rather say that plainly than overclaim.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p>Noted &amp; Known is free for up to eight people. A single purchase, Noted &amp; Known Full, adds unlimited people, custom labels, saved views and five more skins. There is no subscription.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="in">
+    <div>
+      <p><a class="brand" href="./"><img src="assets/cut/logo.svg" alt="" width="30" height="30">Noted &amp; Known</a></p>
+      <p>Made by Singh Studio in Aotearoa New Zealand</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="support.html">Support</a>
+      <a href="docs/privacy.html">Privacy</a>
+      <a href="docs/terms.html">Terms</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
 </html>

@@ -21,9 +21,8 @@ jobs:
           test -f index.html
           test -f script.js
           test -f styles.css
-          test -f assets/screenshots/home-main.webp
-          test -f assets/screenshots/start-with-someone.webp
-          test -f assets/screenshots/what-you-notice.webp
-          test -f assets/screenshots/your-space.webp
-          test -f assets/screenshots/app-lock.jpg
-          node -e "const fs=require('fs'); const files=['index.html','script.js','styles.css']; const refs=new Set(); for (const f of files) { const s=fs.readFileSync(f,'utf8'); for (const m of s.matchAll(/(?:src|href)=['\"]([^'\"]+)['\"]/g)) refs.add(m[1]); for (const m of s.matchAll(/url\(['\"]?([^)'\"]+)['\"]?\)/g)) refs.add(m[1]); } const missing=[...refs].filter(r=>r.startsWith('./')&&!r.includes('#')).filter(r=>!fs.existsSync(r.replace(/^\.\//,''))); if (missing.length) { console.error(missing.join('\n')); process.exit(1); }"
+          test -f support.html
+          test -f docs/privacy.html
+          test -f docs/terms.html
+          test -f assets/screens/home.webp
+          test -f assets/og-image.png

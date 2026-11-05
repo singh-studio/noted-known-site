@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notedandknown.app/sitemap.xml
