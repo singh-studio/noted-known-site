@@ -4,22 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Noted &amp; Known: notes on the people you love</title>
-  <meta name="description" content="Noted &amp; Known is a private iPhone app for keeping notes on the people you love. No account, no cloud, and free for up to eight people.">
+  <meta name="description" content="Noted &amp; Known is a private iPhone app for keeping notes on the people you love. There's no account and no cloud, and it's free for up to eight people.">
   <link rel="canonical" href="https://notedandknown.app/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Noted &amp; Known">
   <meta property="og:title" content="Noted &amp; Known: notes on the people you love">
-  <meta property="og:description" content="A private iPhone app for keeping what you learn about the people you love. No account, no cloud, and free for up to eight people.">
+  <meta property="og:description" content="A private iPhone app for keeping what you learn about the people you love. There's no account and no cloud, and it's free for up to eight people.">
   <meta property="og:url" content="https://notedandknown.app/">
   <meta property="og:image" content="https://notedandknown.app/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="The Noted and Known logo and a phone showing the Home screen.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#ECEDE8">
+  <meta name="theme-color" content="#FFC91F">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/ZenMaruGothic-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ZenKakuGothicNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.className += ' js';</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Noted & Known","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://notedandknown.app/","description":"A private iPhone app for keeping notes on the people you love.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Singh Studio"}}</script>
@@ -29,9 +30,10 @@
 
 <header class="top">
   <div class="in">
-    <a class="brand" href="./"><img src="assets/cut/logo.svg" alt="" width="30" height="30">Noted &amp; Known</a>
+    <a class="brand" href="./"><img src="assets/cut/logo.svg" alt="" width="34" height="34">Noted &amp; Known</a>
     <nav aria-label="Main">
-      <a href="#how">How it works</a>
+      <a href="#why">Why</a>
+      <a href="#skins">Skins</a>
       <a href="#privacy">Privacy</a>
       <a href="#price">Price</a>
       <a href="#faq">Questions</a>
@@ -41,199 +43,282 @@
 
 <main id="main">
 
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="in">
-      <div>
-        <img class="mark" src="assets/cut/logo.svg" alt="The Noted and Known logo, five cut-paper dots" width="96" height="96">
-        <h1 id="hero-title">Noted <span class="hl">&amp; Known</span></h1>
-        <p class="lede">A private place on your iPhone to keep what you learn about the people you love, so you remember it when it counts.</p>
+  <!-- 1. Hero: here is the app -->
+  <section class="sec hero" id="top" style="--c:#FFC91F;--on:#101318" aria-labelledby="hero-title">
+    <div class="in hero-grid">
+      <div class="hero-text">
+        <svg class="mark boil" viewBox="0 0 100 100" role="img" aria-label="The Noted and Known logo, five cut-paper dots"><g transform="translate(30 34) rotate(0) scale(0.293) translate(-50 -50)"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z" fill="#2447D8"/></g><g transform="translate(66 24) rotate(70) scale(0.178) translate(-50 -50)"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z" fill="#12B3C7"/></g><g transform="translate(76 54) rotate(140) scale(0.239) translate(-50 -50)"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z" fill="#FF7A1F"/></g><g transform="translate(44 74) rotate(210) scale(0.261) translate(-50 -50)"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z" fill="#F2558C"/></g><g transform="translate(18 66) rotate(280) scale(0.152) translate(-50 -50)"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z" fill="#1E9E62"/></g></svg>
+        <h1 class="d1" id="hero-title" data-chunks><span class="ln">Noted</span> <span class="ln">&amp; Known</span></h1>
+        <p class="lede">It’s a notebook for the people you love, and it lives on your phone. When a friend mentions the trip she’s dreading, or your dad says his knee’s playing up, you jot it down and it’s on their page when you need it.</p>
         <p class="store" data-store-cta>Coming back to the App Store soon</p>
-        <p class="hero-note">Free for up to eight people. No account needed.</p>
+        <p class="fine">Free for up to eight people. There’s no account and no cloud.</p>
       </div>
-      <figure class="phone"><img src="assets/screens/home.webp" width="640" height="1387" alt="The Home screen: a follow-up for Aroha tomorrow, this week's reminders and a birthday, and a person who has gone quiet."></figure>
-    </div>
-  </section>
-
-  <section class="why" aria-labelledby="why-title">
-    <div class="in">
-      <div>
-        <p class="eyebrow">Why it exists</p>
-        <h2 id="why-title">The things people tell you <span class="hl">slip away</span></h2>
-        <p style="margin-top:28px">A friend says she is nervous about a trip next month. Your dad mentions that his knee has been playing up. Someone drops a hint about a birthday present months before the day. You mean to remember all of it, and a few weeks later you can only recall that they said something.</p>
-        <p>Noted &amp; Known gives each of those details a place on that person's page. It is there when you see them, and when you wonder whether to get in touch.</p>
+      <div class="hero-art">
+        <svg class="shape hshape h1s pop" data-shape="circle" data-seed="11" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:6deg"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z"/></svg>
+        <svg class="shape hshape h2s pop" data-shape="leaf" data-seed="17" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:-10deg"><path d="M14 78 C8 46 30 10 72 6 C84 5 94 9 95 20 C98 52 72 92 34 94 C24 95 16 90 14 78 Z"/></svg>
+        <figure class="phone full hero-phone pop" style="--tilt:1.5deg"><img src="assets/screens/home.webp" width="900" height="1951" fetchpriority="high" alt="The Home screen: a follow-up for Aroha tomorrow, this week’s reminders and a birthday, and a person who has gone quiet."></figure>
+        <div class="slab pop" style="--tilt:-5deg"><b>Noted.</b><span>Something you noticed about Mara</span></div>
+        <div class="faceb pop" style="--tilt:-3deg" aria-hidden="true"><svg class="shape " data-shape="circle" data-seed="5" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" ><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z"/></svg><b>M</b></div>
       </div>
-      <ul class="slips">
-        <li>
-          <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#1E9E62" d="M22 18 C38 2 70 4 86 20 C100 36 98 62 84 78 C72 92 52 88 44 76 C38 67 28 72 20 68 C4 60 6 34 22 18 Z"/></svg>
-          <p style="margin:0"><strong>Nervous about the trip</strong><span>She is flying to Rarotonga next month and does not enjoy the flights. Worth a message the night before.</span></p>
-        </li>
-        <li>
-          <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#2447D8" d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z"/></svg>
-          <p style="margin:0"><strong>Dad's knee</strong><span>He rubs it when he stands up and says it is fine. The physio appointment is on Monday.</span></p>
-        </li>
-        <li>
-          <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#F2558C" d="M10 34 C16 14 40 6 62 9 L86 18 C98 30 97 58 88 74 C76 94 46 98 26 90 C8 82 3 56 10 34 Z"/></svg>
-          <p style="margin:0"><strong>The birthday hint</strong><span>In June she said she would love a proper tent for next summer. Her birthday is in November.</span></p>
-        </li>
-      </ul>
     </div>
   </section>
 
-  <section class="kinds" aria-labelledby="kinds-title">
-    <div class="in">
-      <p class="eyebrow">Five kinds of note</p>
-      <h2 id="kinds-title">Each note has a kind, and each kind has a <span class="hl">colour</span></h2>
-      <ul>
-        <li class="kind" style="--k:#2447D8;--on:#fff;--i:0;--r:-1.2deg">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
-          <b>Observation</b><small>Something you noticed.</small>
-          <q>Orders the same seat by the window whenever it is free.</q>
-        </li>
-        <li class="kind" style="--k:#12B3C7;--on:#101318;--i:1;--r:1deg">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
-          <b>Interest</b><small>Something they love.</small>
-          <q>Keeps circling back to slow ceramic glazing.</q>
-        </li>
-        <li class="kind" style="--k:#F2558C;--on:#101318;--i:2;--r:-0.6deg">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
-          <b>Gift idea</b><small>Something to give.</small>
-          <q>A linen market tote would suit her for her birthday.</q>
-        </li>
-        <li class="kind" style="--k:#FF7A1F;--on:#101318;--i:3;--r:1.4deg">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
-          <b>Moment</b><small>Something you shared.</small>
-          <q>The long lunch where we finally caught up properly.</q>
-        </li>
-        <li class="kind" style="--k:#1E9E62;--on:#101318;--i:4;--r:-1deg">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
-          <b>Support</b><small>Something they might need a hand with.</small>
-          <q>Big presentation on Thursday, so check in beforehand.</q>
-        </li>
-      </ul>
+  <!-- 2. Why you'd want it -->
+  <section class="sec paper why" id="why" style="--c:#ECEDE8;--on:#26282B" aria-labelledby="why-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V6 C10 2 24 9 40 5 S70 9 100 3 V12 Z"/><path class="e2" d="M0 12 V4 C14 9 28 2 46 6 S78 2 100 7 V12 Z"/><path class="e3" d="M0 12 V7 C12 3 30 8 48 4 S76 9 100 5 V12 Z"/></svg>
+    <div class="in why-grid">
+      <div class="why-text">
+        <h2 class="d2" id="why-t" data-chunks>You meant to remember that.</h2>
+        <p class="big">A friend says she’s nervous about a trip next month. Your dad mentions his knee’s been playing up. Someone drops a hint about a birthday present months before the day. You nod, you fully intend to remember, and a few weeks later all you’ve got is a feeling that they told you something.</p>
+        <p class="big">Noted &amp; Known gives each of those a place on that person’s page, so it’s waiting for you next time you see them.</p>
+        <p class="big five">Every note is one of five kinds, and each kind has its own colour.</p>
+        <div class="dots" aria-hidden="true">
+          <i style="--k:#2447D8"><svg class="shape " data-shape="circle" data-seed="1" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" ><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z"/></svg></i><i style="--k:#12B3C7"><svg class="shape " data-shape="leaf" data-seed="2" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" ><path d="M14 78 C8 46 30 10 72 6 C84 5 94 9 95 20 C98 52 72 92 34 94 C24 95 16 90 14 78 Z"/></svg></i><i style="--k:#F2558C"><svg class="shape " data-shape="pebble" data-seed="3" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" ><path d="M10 34 C16 14 40 6 62 9 L86 18 C98 30 97 58 88 74 C76 94 46 98 26 90 C8 82 3 56 10 34 Z"/></svg></i><i style="--k:#FF7A1F"><svg class="shape " data-shape="square" data-seed="4" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" ><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg></i><i style="--k:#1E9E62"><svg class="shape " data-shape="bean" data-seed="5" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" ><path d="M22 18 C38 2 70 4 86 20 C100 36 98 62 84 78 C72 92 52 88 44 76 C38 67 28 72 20 68 C4 60 6 34 22 18 Z"/></svg></i>
+        </div>
+      </div>
+      <div class="why-art">
+        <figure class="phone crop whyp pop" style="--crop:.781;--tilt:-2deg;--k:50"><img src="assets/screens/people.webp" width="900" height="1951" loading="lazy" decoding="async" alt="The People screen, grouped into Inner Circle and Family."></figure>
+      </div>
     </div>
   </section>
 
-  <section class="how" id="how" aria-labelledby="how-title">
-    <div class="in">
-      <p class="eyebrow">How it works</p>
-      <h2 id="how-title">Write a line, and it is on their <span class="hl">page</span></h2>
-      <ol>
-        <li>
-          <span class="num">1</span>
-          <figure class="phone"><img src="assets/screens/person.webp" width="640" height="1387" loading="lazy" alt="A person's page for Dad, with his drink, his birthday, what is coming up, and notes marked by kind."></figure>
-          <div><h3>A page for each person</h3><p>Notes sit on the page of the person they are about, along with their birthday and anything coming up.</p></div>
-        </li>
-        <li>
-          <span class="num">2</span>
-          <figure class="phone"><img src="assets/screens/people.webp" width="640" height="1387" loading="lazy" alt="The People screen, grouped into Inner Circle and Family, with a filter for each circle."></figure>
-          <div><h3>Everyone in their own circles</h3><p>Group people however you think of them. Add someone by hand, or pick them from your contacts.</p></div>
-        </li>
-        <li>
-          <span class="num">3</span>
-          <figure class="phone"><img src="assets/screens/chronicle.webp" width="640" height="1387" loading="lazy" alt="The Chronicle, a list of dated entries such as A quiet Sunday at the bach."></figure>
-          <div><h3>Keep the longer moments</h3><p>When something deserves more than a line, write a dated entry in the Chronicle and read it again later.</p></div>
-        </li>
-        <li>
-          <span class="num">4</span>
-          <figure class="phone"><img src="assets/screens/you.webp" width="640" height="1387" loading="lazy" alt="The You screen, with counts of people, notes and moments, and a grid of the last three months of activity."></figure>
-          <div><h3>See where your attention goes</h3><p>The You screen shows the last three months, which is a useful nudge toward someone you have lost touch with.</p></div>
-        </li>
-      </ol>
+  <section class="sec kind k--r" id="observation" style="--c:#2447D8;--on:#FFFFFF;--lt:#5973E1;--dk:#2442BC" aria-labelledby="observation-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V5 C16 8 30 2 50 6 S80 8 100 4 V12 Z"/><path class="e2" d="M0 12 V8 C12 4 34 8 52 3 S82 7 100 6 V12 Z"/><path class="e3" d="M0 12 V4 C18 8 36 3 54 7 S84 3 100 7 V12 Z"/></svg>
+    <svg class="shape kshape pop" data-shape="circle" data-seed="3" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:-6deg"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z"/></svg>
+    <div class="in kgrid">
+      <div class="ktext">
+        <p class="kicker pop">Something you noticed.</p>
+        <h2 class="kname" id="observation-t" data-chunks>Observation</h2>
+        <p class="knote"><q>Orders the same seat by the window whenever it’s free.</q></p>
+        <p class="kextra">It’s the kind of detail you’d never think to write down, which is why you’ll be glad you did.</p>
+      </div>
+      <div class="kphone pop" style="--tilt:1deg">
+        <div class="stage" data-kind="observation" data-col="#2447D8" data-on="#FFFFFF" data-name="Mara" role="img" aria-label="A new note saved to Mara's page: something you noticed."></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec kind k--l" id="interest" style="--c:#12B3C7;--on:#101318;--lt:#4BC5D4;--dk:#159DAE" aria-labelledby="interest-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V8 C12 3 26 7 44 5 S74 2 100 6 V12 Z"/><path class="e2" d="M0 12 V5 C10 8 30 3 48 7 S72 8 100 4 V12 Z"/><path class="e3" d="M0 12 V6 C14 2 28 8 46 3 S76 8 100 5 V12 Z"/></svg>
+    <svg class="shape kshape pop" data-shape="leaf" data-seed="8" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:8deg"><path d="M14 78 C8 46 30 10 72 6 C84 5 94 9 95 20 C98 52 72 92 34 94 C24 95 16 90 14 78 Z"/></svg>
+    <div class="in kgrid">
+      <div class="ktext">
+        <p class="kicker pop">Something they love.</p>
+        <h2 class="kname" id="interest-t" data-chunks>Interest</h2>
+        <p class="knote"><q>She keeps coming back to slow ceramic glazing.</q></p>
+        <p class="kextra">Handy when you’re stuck for something to talk about, and even handier when it’s time to buy a present.</p>
+      </div>
+      <div class="kphone pop" style="--tilt:-1deg">
+        <div class="stage" data-kind="interest" data-col="#12B3C7" data-on="#101318" data-name="Priya" role="img" aria-label="A new note saved to Priya's page: something they love."></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec kind k--c" id="gift" style="--c:#F2558C;--on:#101318;--lt:#F57EA8;--dk:#D14E7C" aria-labelledby="gift-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V6 C10 2 24 9 40 5 S70 9 100 3 V12 Z"/><path class="e2" d="M0 12 V4 C14 9 28 2 46 6 S78 2 100 7 V12 Z"/><path class="e3" d="M0 12 V7 C12 3 30 8 48 4 S76 9 100 5 V12 Z"/></svg>
+    <svg class="shape kshape pop" data-shape="pebble" data-seed="13" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:-4deg"><path d="M10 34 C16 14 40 6 62 9 L86 18 C98 30 97 58 88 74 C76 94 46 98 26 90 C8 82 3 56 10 34 Z"/></svg>
+    <div class="in kgrid">
+      <div class="ktext">
+        <p class="kicker pop">Something to give.</p>
+        <h2 class="kname" id="gift-t" data-chunks>Gift idea</h2>
+        <p class="knote"><q>A linen market tote would suit her for her birthday.</q></p>
+        <p class="kextra">Write it down the moment they say it, months before you’ve got any reason to buy it.</p>
+      </div>
+      <div class="kphone pop" style="--tilt:0deg">
+        <div class="stage" data-kind="gift" data-col="#F2558C" data-on="#101318" data-name="Aroha" role="img" aria-label="A new note saved to Aroha's page: something to give."></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec kind k--r" id="moment" style="--c:#FF7A1F;--on:#101318;--lt:#FF9A55;--dk:#DC6D21" aria-labelledby="moment-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V5 C16 8 30 2 50 6 S80 8 100 4 V12 Z"/><path class="e2" d="M0 12 V8 C12 4 34 8 52 3 S82 7 100 6 V12 Z"/><path class="e3" d="M0 12 V4 C18 8 36 3 54 7 S84 3 100 7 V12 Z"/></svg>
+    <svg class="shape kshape pop" data-shape="square" data-seed="18" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:10deg"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
+    <div class="in kgrid">
+      <div class="ktext">
+        <p class="kicker pop">Something you shared.</p>
+        <h2 class="kname" id="moment-t" data-chunks>Moment</h2>
+        <p class="knote"><q>The long lunch where we finally caught up properly.</q></p>
+        <p class="kextra">For the days you’d like to hold onto a bit longer than your memory will let you.</p>
+      </div>
+      <div class="kphone pop" style="--tilt:1.5deg">
+        <div class="stage" data-kind="moment" data-col="#FF7A1F" data-on="#101318" data-name="Hemi" role="img" aria-label="A new note saved to Hemi's page: something you shared."></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec kind k--l" id="support" style="--c:#1E9E62;--on:#101318;--lt:#54B588;--dk:#1F8B59" aria-labelledby="support-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V8 C12 3 26 7 44 5 S74 2 100 6 V12 Z"/><path class="e2" d="M0 12 V5 C10 8 30 3 48 7 S72 8 100 4 V12 Z"/><path class="e3" d="M0 12 V6 C14 2 28 8 46 3 S76 8 100 5 V12 Z"/></svg>
+    <svg class="shape kshape pop" data-shape="bean" data-seed="23" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:-8deg"><path d="M22 18 C38 2 70 4 86 20 C100 36 98 62 84 78 C72 92 52 88 44 76 C38 67 28 72 20 68 C4 60 6 34 22 18 Z"/></svg>
+    <div class="in kgrid">
+      <div class="ktext">
+        <p class="kicker pop">Something they might need a hand with.</p>
+        <h2 class="kname" id="support-t" data-chunks>Support</h2>
+        <p class="knote"><q>Big presentation on Thursday, so I’ll check in beforehand.</q></p>
+        <p class="kextra">A nudge to get in touch at just the right moment, before you’ve forgotten all about it.</p>
+      </div>
+      <div class="kphone pop" style="--tilt:-1deg">
+        <div class="stage" data-kind="support" data-col="#1E9E62" data-on="#101318" data-name="Dad" role="img" aria-label="A new note saved to Dad's page: something they might need a hand with."></div>
+      </div>
     </div>
   </section>
 
-  <section class="skins" id="skins" aria-labelledby="skins-title">
-    <div class="in">
-      <p class="eyebrow">Skins</p>
-      <h2 id="skins-title">Six skins, each with its own <span class="hl">paper</span></h2>
-      <p style="margin-top:24px">Graph Paper comes free. Noted &amp; Known Full adds Harbor Mist, Wild Rose, Evergreen, Print and Colour Block. All six have a light and a dark version.</p>
-      <ul>
-        <li><figure><div class="phone"><img src="assets/screens/skin-graph-paper.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Graph Paper skin: dotted paper and a yellow highlight."></div><figcaption>Graph Paper<span>Free</span></figcaption></figure></li>
-        <li><figure><div class="phone"><img src="assets/screens/skin-harbor-mist.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Harbor Mist skin: cool, misty paper."></div><figcaption>Harbor Mist<span>Full</span></figcaption></figure></li>
-        <li><figure><div class="phone"><img src="assets/screens/skin-wild-rose.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Wild Rose skin: soft rose paper with a pink highlight."></div><figcaption>Wild Rose<span>Full</span></figcaption></figure></li>
-        <li><figure><div class="phone"><img src="assets/screens/skin-evergreen.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Evergreen skin: graph paper in leafy greens."></div><figcaption>Evergreen<span>Full</span></figcaption></figure></li>
-        <li><figure><div class="phone"><img src="assets/screens/skin-print.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Print skin: white paper with heavier headings."></div><figcaption>Print<span>Full</span></figcaption></figure></li>
-        <li><figure><div class="phone"><img src="assets/screens/skin-colour-block.webp" width="640" height="1387" loading="lazy" alt="Home screen in the Colour Block skin: headings on a full-width band of colour."></div><figcaption>Colour Block<span>Full</span></figcaption></figure></li>
-      </ul>
+  <!-- 8. A person's page -->
+  <section class="sec ink person" id="person" style="--c:#1E2023;--on:#FFFFFF" aria-labelledby="person-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V8 C12 3 26 7 44 5 S74 2 100 6 V12 Z"/><path class="e2" d="M0 12 V5 C10 8 30 3 48 7 S72 8 100 4 V12 Z"/><path class="e3" d="M0 12 V6 C14 2 28 8 46 3 S76 8 100 5 V12 Z"/></svg>
+    <svg class="shape pshape ps1 pop" data-shape="circle" data-seed="41" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:8deg"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z"/></svg>
+    <svg class="shape pshape ps2 pop" data-shape="square" data-seed="43" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:-6deg"><path d="M12 14 L84 7 C92 7 95 12 95 20 L91 82 C90 90 86 93 78 93 L18 96 C10 96 6 92 6 84 L5 24 C5 18 7 15 12 14 Z"/></svg>
+    <svg class="shape pshape ps3 pop" data-shape="pebble" data-seed="47" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:12deg"><path d="M10 34 C16 14 40 6 62 9 L86 18 C98 30 97 58 88 74 C76 94 46 98 26 90 C8 82 3 56 10 34 Z"/></svg>
+    <div class="in two">
+      <div class="two-text">
+        <h2 class="d1 hd" id="person-t" data-chunks>Everyone gets a page.</h2>
+        <p class="big">Each person has their own page with their birthday, what’s coming up and every note you’ve written about them. You can sort people into circles like Family or Friends, and add them by hand or pick them from your contacts.</p>
+      </div>
+      <div class="two-art">
+        <figure class="phone crop giant pop" style="--crop:.826;--tilt:1.5deg;--k:49"><img src="assets/screens/person.webp" width="900" height="1951" loading="lazy" decoding="async" alt="Dad’s page: his drink, his birthday, what’s coming up, and notes marked by kind."></figure>
+      </div>
     </div>
   </section>
 
-  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+  <!-- 9. Your week (Home) -->
+  <section class="sec paper week" id="week" style="--c:#ECEDE8;--on:#26282B" aria-labelledby="week-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V6 C10 2 24 9 40 5 S70 9 100 3 V12 Z"/><path class="e2" d="M0 12 V4 C14 9 28 2 46 6 S78 2 100 7 V12 Z"/><path class="e3" d="M0 12 V7 C12 3 30 8 48 4 S76 9 100 5 V12 Z"/></svg>
+    <svg class="shape wshape pop" data-shape="circle" data-seed="51" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:-4deg"><path d="M50 6 C74 4 95 22 96 48 C97 63 90 78 76 88 L58 95 C34 99 12 86 6 62 C1 40 14 12 50 6 Z"/></svg>
+    <div class="in two two-flip">
+      <div class="two-art">
+        <figure class="phone crop giant pop" style="--crop:.725;--tilt:-1.5deg;--k:57"><img src="assets/screens/home.webp" width="900" height="1951" loading="lazy" decoding="async" alt="The Home screen with this week’s birthdays and reminders."></figure>
+      </div>
+      <div class="two-text">
+        <h2 class="d2 hd" id="week-t" data-chunks>Home keeps <span class="hl">your week</span> in order.</h2>
+        <p class="big">Home pulls the week together. You’ll see who’s got a birthday, who needs a message, and who you haven’t spoken to in a while. There are no scores or streaks, so there’s nothing to feel bad about.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Chronicle -->
+  <section class="sec white chron" id="chronicle" style="--c:#FFFFFF;--on:#26282B" aria-labelledby="chron-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V5 C16 8 30 2 50 6 S80 8 100 4 V12 Z"/><path class="e2" d="M0 12 V8 C12 4 34 8 52 3 S82 7 100 6 V12 Z"/><path class="e3" d="M0 12 V4 C18 8 36 3 54 7 S84 3 100 7 V12 Z"/></svg>
+    <div class="in two">
+      <div class="two-text">
+        <h2 class="d2 hd" id="chron-t" data-chunks>For the moments worth more than a line.</h2>
+        <p class="big">When something deserves more room, write it up in the Chronicle. Every entry is dated and sits with that person, so you can read it again in a year and remember exactly how that Sunday felt.</p>
+        <p class="big">The You screen shows the last three months at a glance, which is handy for spotting someone you’ve lost touch with.</p>
+      </div>
+      <div class="two-art chron-art">
+        <figure class="phone crop giant pop" style="--crop:.763;--tilt:1.5deg;--k:53"><img src="assets/screens/chronicle.webp" width="900" height="1951" loading="lazy" decoding="async" alt="The Chronicle: dated entries such as A quiet Sunday at the bach."></figure>
+        <p class="slip s1 pop" style="--tilt:-4deg;--d:.5s"><i aria-hidden="true"></i><span>30 Oct</span><b>A quiet Sunday at the bach</b></p>
+        <p class="slip s2 pop" style="--tilt:3deg;--d:.75s"><i aria-hidden="true"></i><span>25 Oct</span><b>Coffee before the long weekend</b></p>
+        <p class="slip s3 pop" style="--tilt:-2deg;--d:1s"><i aria-hidden="true"></i><span>16 Oct</span><b>Moving day</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Skins -->
+  <section class="sec skins" id="skins" style="--c:#ECEDE8;--on:#26282B" aria-labelledby="skins-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V6 C10 2 24 9 40 5 S70 9 100 3 V12 Z"/><path class="e2" d="M0 12 V4 C14 9 28 2 46 6 S78 2 100 7 V12 Z"/><path class="e3" d="M0 12 V7 C12 3 30 8 48 4 S76 9 100 5 V12 Z"/></svg>
+    <div class="in skins-head">
+      <h2 class="d1 hd" id="skins-t" data-chunks>Make it yours.</h2>
+      <p class="big skins-p">Graph Paper’s free. Noted &amp; Known Full adds Harbor Mist, Wild Rose, Evergreen, Print and Colour Block, and every skin has a light and a dark version.</p>
+    </div>
+    <ul class="tiles">
+      <li class="tile cut" style="--hi:#FFC91F"><p class="tn"><b>Graph Paper</b><span>Free</span></p><figure class="phone crop tp" style="--crop:.725;"><img src="assets/screens/skin-graph-paper.webp" width="640" height="1387" loading="lazy" decoding="async" alt="Home in the Graph Paper skin: dotted paper with a yellow highlight."></figure></li>
+      <li class="tile cut" style="--hi:#FFB3C1"><p class="tn"><b>Wild Rose</b><span>Full</span></p><figure class="phone crop tp" style="--crop:.725;"><img src="assets/screens/skin-wild-rose.webp" width="640" height="1387" loading="lazy" decoding="async" alt="Home in the Wild Rose skin: soft rose paper with a pink highlight."></figure></li>
+      <li class="tile cut" style="--hi:#F4D35E"><p class="tn"><b>Harbor Mist</b><span>Full</span></p><figure class="phone crop tp" style="--crop:.725;"><img src="assets/screens/skin-harbor-mist.webp" width="640" height="1387" loading="lazy" decoding="async" alt="Home in the Harbor Mist skin: cool, misty paper."></figure></li>
+      <li class="tile cut" style="--hi:#FFC91F"><p class="tn"><b>Print</b><span>Full</span></p><figure class="phone crop tp" style="--crop:.725;"><img src="assets/screens/skin-print.webp" width="640" height="1387" loading="lazy" decoding="async" alt="Home in the Print skin: white paper with heavier headings."></figure></li>
+      <li class="tile cut" style="--hi:#D9E86A"><p class="tn"><b>Evergreen</b><span>Full</span></p><figure class="phone crop tp" style="--crop:.725;"><img src="assets/screens/skin-evergreen.webp" width="640" height="1387" loading="lazy" decoding="async" alt="Home in the Evergreen skin: graph paper in leafy greens."></figure></li>
+      <li class="tile cut" style="--hi:#FFC91F"><p class="tn"><b>Colour Block</b><span>Full</span></p><figure class="phone crop tp" style="--crop:.725;"><img src="assets/screens/skin-colour-block.webp" width="640" height="1387" loading="lazy" decoding="async" alt="Home in the Colour Block skin: headings on a full-width band of colour."></figure></li>
+    </ul>
+  </section>
+
+  <!-- 12. Privacy -->
+  <section class="sec ink privacy" id="privacy" style="--c:#1E2023;--on:#FFFFFF" aria-labelledby="priv-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V8 C12 3 26 7 44 5 S74 2 100 6 V12 Z"/><path class="e2" d="M0 12 V5 C10 8 30 3 48 7 S72 8 100 4 V12 Z"/><path class="e3" d="M0 12 V6 C14 2 28 8 46 3 S76 8 100 5 V12 Z"/></svg>
+    <svg class="shape prshape pop" data-shape="bean" data-seed="61" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:10deg"><path d="M22 18 C38 2 70 4 86 20 C100 36 98 62 84 78 C72 92 52 88 44 76 C38 67 28 72 20 68 C4 60 6 34 22 18 Z"/></svg>
     <div class="in">
-      <div>
-        <p class="eyebrow">Privacy</p>
-        <h2 id="privacy-title">Your notes stay on <span class="hl">your device</span></h2>
-        <p style="margin-top:24px">There is no account and no Noted &amp; Known cloud, and no server receives what you write. This is what that means in practice, including the places where it has limits.</p>
-        <ul>
-          <li>No account is needed to use the app.</li>
+      <h2 class="d1 hd" id="priv-t" data-chunks>Your notes stay on your device.</h2>
+      <p class="big lead">There’s no account to make and no Noted &amp; Known cloud, and no server receives what you write. Here’s what that means in practice, including the bits where it has limits.</p>
+      <div class="priv-cols">
+        <ul class="plain">
+          <li>You don’t need an account to use the app.</li>
           <li>Your people, notes and photos never leave your device.</li>
-          <li>If the app crashes, a technical crash report (stack trace, device model, OS version) is sent so the bug can be fixed. It never includes your notes, names, photos or identity.</li>
-          <li>Product analytics are bucketed counts tied to a random install id. They show which screens get used and never what you wrote.</li>
-          <li>Contacts are only read if you choose to import, and you pick each person. Only their name, photo and birthday are copied in, once. You can add every person by hand without touching your address book.</li>
-          <li>Reminders are local notifications scheduled by your device, not push notifications from a server.</li>
+          <li>If the app crashes, it sends a technical crash report (a stack trace, your device model and your OS version) so we can fix the bug. It never includes your notes, names, photos or who you are.</li>
+          <li>We also collect product analytics, which are counts grouped into ranges and tied to a random install id. They show which screens get used and never what you wrote.</li>
+          <li>The app only reads your contacts if you choose to import, and you pick each person. Only their name, photo and birthday are copied in, once. You can add everyone by hand if you’d rather leave your address book alone.</li>
+          <li>Reminders are local notifications scheduled by your phone, so they don’t come from a server.</li>
         </ul>
-        <h3>The limits</h3>
-        <ul>
-          <li>A biometric or passcode lock keeps out casual snooping, and a privacy cover hides your notes in the app switcher. The lock is not encryption.</li>
-          <li>You can export your data as a JSON file at any time. The file is not encrypted, so keep it somewhere private.</li>
-          <li>Restoring from an export is manual and replaces what is on the device. It is not cloud sync or automatic backup.</li>
-        </ul>
-        <p style="margin-top:24px">The full detail is in the <a href="docs/privacy.html">privacy policy</a> and the <a href="docs/terms.html">terms</a>.</p>
-      </div>
-      <figure class="phone"><img src="assets/screens/privacy.webp" width="640" height="1387" loading="lazy" alt="Settings, showing Noted and Known Full, and Storage set to Local only, with a note that export files are not encrypted."></figure>
-    </div>
-  </section>
-
-  <section class="price" id="price" aria-labelledby="price-title">
-    <div class="in">
-      <p class="eyebrow">Price</p>
-      <h2 id="price-title">Free for eight people, then <span class="hl">one purchase</span></h2>
-      <div class="cols">
-        <div class="tier">
-          <h3>Free</h3>
-          <p>Up to eight people, every kind of note, the Chronicle, reminders, export, and the Graph Paper skin.</p>
-        </div>
-        <div class="tier">
-          <h3>Noted &amp; Known Full</h3>
-          <p>A single purchase, with no subscription.</p>
-          <ul>
-            <li>Unlimited people</li>
-            <li>Custom labels and saved views</li>
-            <li>Five more skins</li>
-          </ul>
+        <div class="priv-side">
+          <div class="limits pop" style="--tilt:-1deg">
+            <h3>And here’s what it can’t do</h3>
+            <ul>
+              <li>A biometric or passcode lock keeps out casual snooping, and a privacy cover hides your notes in the app switcher. The lock isn’t encryption.</li>
+              <li>You can export your data as a JSON file whenever you like. It isn’t encrypted, so keep it somewhere private.</li>
+              <li>Restoring from an export is manual and replaces what’s on the device. It isn’t cloud sync or automatic backup.</li>
+            </ul>
+            <p>The full detail’s in the <a href="docs/privacy.html">privacy policy</a> and the <a href="docs/terms.html">terms</a>.</p>
+          </div>
+          <figure class="phone crop pphone pop" style="--crop:.7;--tilt:2deg"><img src="assets/screens/privacy.webp" width="900" height="1951" loading="lazy" decoding="async" alt="Settings, showing Noted and Known Full, Storage set to Local only, and a note that exported files aren’t encrypted."></figure>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="faq" id="faq" aria-labelledby="faq-title">
+  <!-- 13. Price -->
+  <section class="sec white price" id="price" style="--c:#FFFFFF;--on:#26282B" aria-labelledby="price-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V5 C16 8 30 2 50 6 S80 8 100 4 V12 Z"/><path class="e2" d="M0 12 V8 C12 4 34 8 52 3 S82 7 100 6 V12 Z"/><path class="e3" d="M0 12 V4 C18 8 36 3 54 7 S84 3 100 7 V12 Z"/></svg>
     <div class="in">
-      <p class="eyebrow">Questions</p>
-      <h2 id="faq-title">Honest answers</h2>
+      <h2 class="d2 hd" id="price-t" data-chunks>What it costs.</h2>
+      <div class="slabs">
+        <div class="tier tier-free pop" style="--tilt:-1deg">
+          <p class="tier-label">Free</p>
+          <h3 class="tier-h">Free for eight people.</h3>
+          <p class="big">Every kind of note, the Chronicle, reminders, export and the Graph Paper skin are all included.</p>
+        </div>
+        <div class="tier tier-full pop" style="--tilt:1deg;--d:.25s">
+          <p class="tier-label">Noted &amp; Known Full</p>
+          <h3 class="tier-h">One purchase for everyone else.</h3>
+          <p class="big">You get unlimited people, your own labels, saved views and five more skins, and it’s yours to keep. There’s no subscription.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FAQ -->
+  <section class="sec paper faq" id="faq" style="--c:#ECEDE8;--on:#26282B" aria-labelledby="faq-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V6 C10 2 24 9 40 5 S70 9 100 3 V12 Z"/><path class="e2" d="M0 12 V4 C14 9 28 2 46 6 S78 2 100 7 V12 Z"/><path class="e3" d="M0 12 V7 C12 3 30 8 48 4 S76 9 100 5 V12 Z"/></svg>
+    <div class="in">
+      <h2 class="d2 hd" id="faq-t" data-chunks>Questions people ask.</h2>
+      <div class="faq-list">
       <details>
         <summary>Is it a CRM?</summary>
-        <p>No. It is for remembering the people in your life, and it has no sales pipelines, follow-up quotas or networking features. If you are looking for a CRM, this will feel like the wrong tool.</p>
+        <p>No. It’s for remembering the people in your life, so there are no sales pipelines, follow-up quotas or networking tools in it. If you’re after a CRM, this will feel like the wrong app.</p>
       </details>
       <details>
         <summary>Where does my data go?</summary>
-        <p>Your notes stay on your device. There is no account and no Noted &amp; Known cloud, so nothing you write is sent to a server of ours. The app does send crash reports and basic usage counts, as described in the privacy section above, and neither contains anything you wrote.</p>
+        <p>Your notes stay on your device. There’s no account and no Noted &amp; Known cloud, so nothing you write is sent to a server of ours. The app does send crash reports and basic usage counts, as described in the privacy section above, and neither contains anything you wrote.</p>
       </details>
       <details>
         <summary>Can I export my data?</summary>
-        <p>Yes. Export saves a JSON file of everything in the app at that moment. It is not an automatic backup, and the file is not encrypted, so keep it somewhere private.</p>
+        <p>Yes. Export saves a JSON file of everything in the app at that moment. It isn’t an automatic backup, and the file isn’t encrypted, so keep it somewhere private.</p>
       </details>
       <details>
         <summary>Does it sync across devices?</summary>
-        <p>Not at the moment. Noted &amp; Known keeps everything on the device it is installed on, so there is no cloud sync.</p>
+        <p>Not at the moment. Noted &amp; Known keeps everything on the device it’s installed on, so there’s no cloud sync.</p>
       </details>
       <details>
         <summary>Is the app lock encryption?</summary>
-        <p>No. The lock helps keep casual snoopers out of the app, but it does not encrypt your data. We would rather say that plainly than overclaim.</p>
+        <p>No. The lock helps keep casual snoopers out of the app, but it doesn’t encrypt your data. We’d rather say so plainly than let you assume.</p>
       </details>
       <details>
         <summary>What does it cost?</summary>
-        <p>Noted &amp; Known is free for up to eight people. A single purchase, Noted &amp; Known Full, adds unlimited people, custom labels, saved views and five more skins. There is no subscription.</p>
+        <p>It’s free for up to eight people. A single purchase, Noted &amp; Known Full, adds unlimited people, custom labels, saved views and five more skins. There’s no subscription.</p>
       </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. The ending -->
+  <section class="sec end" id="end" style="--c:#FFC91F;--on:#101318" aria-labelledby="end-t">
+    <svg class="edge" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path class="e1" d="M0 12 V8 C12 3 26 7 44 5 S74 2 100 6 V12 Z"/><path class="e2" d="M0 12 V5 C10 8 30 3 48 7 S72 8 100 4 V12 Z"/><path class="e3" d="M0 12 V6 C14 2 28 8 46 3 S76 8 100 5 V12 Z"/></svg>
+    <div class="in end-grid">
+      <svg class="shape eshape pop" data-shape="bean" data-seed="31" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="--tilt:12deg"><path d="M22 18 C38 2 70 4 86 20 C100 36 98 62 84 78 C72 92 52 88 44 76 C38 67 28 72 20 68 C4 60 6 34 22 18 Z"/></svg>
+      <h2 class="d1" id="end-t" data-chunks>Go on, write it down.</h2>
+      <p class="lede">The next thing someone tells you is worth keeping.</p>
+      <p class="store" data-store-cta>Coming back to the App Store soon</p>
     </div>
   </section>
 
@@ -241,15 +326,13 @@
 
 <footer class="foot">
   <div class="in">
-    <div>
-      <p><a class="brand" href="./"><img src="assets/cut/logo.svg" alt="" width="30" height="30">Noted &amp; Known</a></p>
-      <p>Made by Singh Studio in Aotearoa New Zealand</p>
-    </div>
+    <p class="foot-brand"><a class="brand" href="./"><img src="assets/cut/logo.svg" alt="" width="34" height="34">Noted &amp; Known</a></p>
     <nav aria-label="Footer">
       <a href="support.html">Support</a>
       <a href="docs/privacy.html">Privacy</a>
       <a href="docs/terms.html">Terms</a>
     </nav>
+    <p class="made">Made by Singh Studio in Aotearoa New Zealand</p>
   </div>
 </footer>
 
