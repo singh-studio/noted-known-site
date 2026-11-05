@@ -237,13 +237,26 @@ html.static .mark path { opacity: 1 !important; animation: none !important; }
 .skins { padding-top: clamp(90px, 11vw, 170px); padding-bottom: 0; }
 .skins-p { max-width: 32em; margin-bottom: clamp(32px, 5vw, 64px); }
 .tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; position: relative; z-index: 2; }
-@media (min-width: 760px) { .tiles { grid-template-columns: 1fr 1fr; } }
 .tile { background: var(--hi); color: #26282B; overflow: hidden; display: flex; flex-direction: column; align-items: center; padding: clamp(40px, 5vw, 88px) 16px 0; }
 .tn { order: -1; margin: 0 0 clamp(24px, 3vw, 48px); text-align: center; }
 .tn b { display: block; font: 900 clamp(44px, 6.6vw, 108px)/1.2 var(--display); }
 .tn span { display: block; margin-top: 8px; font: 500 20px/1.2 var(--text); }
 .tile .phone { width: min(84vw, 380px); }
-@media (min-width: 760px) { .tile .phone { width: min(70%, 520px); } }
+.tile-copy { width: 100%; max-width: 620px; display: flex; flex-direction: column; align-items: center; margin-bottom: clamp(32px, 5vw, 56px); }
+.more-h { margin: 0 0 16px; font: 700 clamp(20px, 2vw, 26px)/1.25 var(--display); text-align: center; }
+.chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.chips li { display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px 10px 12px; background: #FFFFFF; border-radius: 9px 14px 8px 13px; font: 500 clamp(17px, 1.5vw, 20px)/1.2 var(--text); }
+.chips i { width: 20px; height: 20px; background: var(--s); border-radius: 52% 44% 56% 42%; box-shadow: inset 0 0 0 1px rgba(38, 40, 43, 0.14); }
+@media (min-width: 900px) {
+  .tile { flex-direction: row; justify-content: center; align-items: flex-end; gap: clamp(40px, 6vw, 110px); padding: clamp(64px, 6vw, 110px) clamp(32px, 5vw, 80px) 0; }
+  .tile-copy { flex: 0 1 620px; align-items: flex-start; align-self: center; margin-bottom: clamp(64px, 6vw, 110px); }
+  .tile .tn { text-align: left; }
+  .more-h { text-align: left; }
+  .chips { justify-content: flex-start; }
+  .tile .phone { flex: 0 0 auto; width: min(38vw, 560px); }
+}
+.js .chips li { opacity: 0; }
+.js .tile.is-in .chips li { animation: pop 0.5s steps(1, end) calc(0.35s + var(--i) * 0.125s) both; }
 .js .tile.cut { opacity: 0; }
 .js .tile.cut.is-in { animation: slideup 0.5s steps(1, end) both; }
 @keyframes slideup { 0% { opacity: 0; transform: translateY(90px); } 25% { opacity: 1; transform: translateY(56px); } 50% { opacity: 1; transform: translateY(26px); } 75% { opacity: 1; transform: translateY(8px); } 100% { opacity: 1; transform: none; } }
@@ -321,12 +334,12 @@ html.static .mark path { opacity: 1 !important; animation: none !important; }
 /* ---------- still frames: reduced motion, or #static in the address ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .js .pop, .js .w, .js .mark path, .js .tile.cut, .js .tile .phone { opacity: 1 !important; animation: none !important; }
+  .js .pop, .js .w, .js .mark path, .js .tile.cut, .js .tile .phone, .js .chips li { opacity: 1 !important; animation: none !important; }
   .js .is-in .edge path, .js .edge path, .js .shape path { animation: none !important; }
   .faq details p { animation: none; }
   .js .shape .v1, .js .shape .v2, .js .edge .e1, .js .edge .e2 { opacity: 0 !important; }
   .js .shape .v3, .js .edge .e3 { opacity: 1 !important; }
 }
-html.static .pop, html.static .w, html.static .tile.cut, html.static .tile .phone { opacity: 1 !important; animation: none !important; }
+html.static .pop, html.static .w, html.static .tile.cut, html.static .tile .phone, html.static .chips li { opacity: 1 !important; animation: none !important; }
 html.static .shape .v1, html.static .shape .v2, html.static .edge .e1, html.static .edge .e2 { opacity: 0 !important; animation: none !important; }
 html.static .shape .v3, html.static .edge .e3 { opacity: 1 !important; animation: none !important; }
