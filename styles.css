@@ -244,8 +244,13 @@ html.static .mark path { opacity: 1 !important; animation: none !important; }
 .tile .phone { width: min(84vw, 380px); }
 .tile-copy { width: 100%; max-width: 620px; display: flex; flex-direction: column; align-items: center; margin-bottom: clamp(32px, 5vw, 56px); }
 .more-h { margin: 0 0 16px; font: 700 clamp(20px, 2vw, 26px)/1.25 var(--display); text-align: center; }
-.chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-.chips li { display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px 10px 12px; background: #FFFFFF; border-radius: 9px 14px 8px 13px; font: 500 clamp(17px, 1.5vw, 20px)/1.2 var(--text); }
+.chips { list-style: none; margin: 0; padding: 0; max-width: 440px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.chips button { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 10px 16px 10px 12px; border: 0; background: #FFFFFF; color: #26282B; border-radius: 9px 14px 8px 13px; font: 500 clamp(17px, 1.5vw, 20px)/1.2 var(--text); cursor: pointer; transition: background-color 0.24s ease-in-out, color 0.24s ease-in-out; }
+.chips button[aria-pressed="true"] { background: #26282B; color: #FFFFFF; }
+.chips button:focus-visible { outline: 4px solid #26282B; outline-offset: 3px; }
+.tp img { transition: opacity 0.24s ease-in-out; }
+.tp img.is-out { opacity: 0; }
+html.static .tp img { transition: none; }
 .chips i { width: 20px; height: 20px; background: var(--s); border-radius: 52% 44% 56% 42%; box-shadow: inset 0 0 0 1px rgba(38, 40, 43, 0.14); }
 @media (min-width: 900px) {
   .tile { flex-direction: row; justify-content: center; align-items: flex-end; gap: clamp(40px, 6vw, 110px); padding: clamp(64px, 6vw, 110px) clamp(32px, 5vw, 80px) 0; }

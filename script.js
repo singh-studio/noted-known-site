@@ -219,6 +219,50 @@
       if (hr.bottom > 0 && hr.top < h) boilOn(); else boilOff();
     }
   }
+
+  // ---- Skin picker: one phone, five chips. The image crossfades on one smooth ease-in-out (240 ms); still frames swap at once ----
+  (function () {
+    var fig = document.querySelector('[data-skin-figure]');
+    if (!fig) return;
+    var img = fig.querySelector('img');
+    var tile = fig.closest('.tile');
+    var tn = tile.querySelector('.tn');
+    var btns = Array.prototype.slice.call(tile.querySelectorAll('.chips button'));
+    var token = 0;
+    function apply(b) {
+      img.src = b.getAttribute('data-src');
+      img.alt = b.getAttribute('data-alt');
+      fig.style.setProperty('--crop', b.getAttribute('data-crop'));
+    }
+    function pick(b) {
+      if (b.getAttribute('aria-pressed') === 'true') return;
+      btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      tn.querySelector('b').textContent = b.getAttribute('data-name');
+      tn.querySelector('span').textContent = b.getAttribute('data-tier');
+      var mine = ++token;
+      if (still) { apply(b); return; }
+      img.classList.add('is-out');
+      setTimeout(function () {
+        if (mine !== token) return;
+        var done = false;
+        function show() { if (done || mine !== token) return; done = true; img.classList.remove('is-out'); }
+        img.onload = show;
+        apply(b);
+        if (img.complete) show();
+        setTimeout(show, 400);
+      }, 240);
+    }
+    btns.forEach(function (b) { b.addEventListener('click', function () { pick(b); }); });
+    var preloaded = false;
+    function preload() {
+      if (preloaded) return;
+      preloaded = true;
+      btns.forEach(function (b) { var i = new Image(); i.src = b.getAttribute('data-src'); });
+    }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es, o) { if (es[0].isIntersecting) { preload(); o.disconnect(); } }, { rootMargin: '200px' }).observe(tile);
+    } else { preload(); }
+  })();
   window.addEventListener('scroll', check, { passive: true });
   window.addEventListener('resize', check);
   setInterval(check, 300);
