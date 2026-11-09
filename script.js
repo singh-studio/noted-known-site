@@ -1,3 +1,25 @@
+// Store badges. To put a store live, change its `live: false` to `live: true`. That one word is all it takes.
+// While a store is not live its badge shows dimmed, with "Coming soon" under it, and is not a link.
+const STORES = {
+  appStore: { live: false, url: 'https://apps.apple.com/app/id6766800274' },
+  googlePlay: { live: false, url: 'https://play.google.com/store/apps/details?id=com.singhstudio.littlethings' },
+};
+
+(function renderStores() {
+  var badges = [
+    { key: 'appStore', img: '<img src="assets/badge-app-store.svg" width="120" height="40" alt="', link: 'Download Noted &amp; Known on the App Store', off: 'App Store' },
+    { key: 'googlePlay', img: '<img class="gp" src="assets/badge-google-play.png" width="646" height="250" alt="', link: 'Get Noted &amp; Known on Google Play', off: 'Google Play' }
+  ];
+  var html = badges.map(function (b) {
+    var s = STORES[b.key];
+    if (s && s.live) {
+      return '<div class="store-item"><a class="badge" href="' + s.url + '" aria-label="' + b.link + '">' + b.img + '"></a></div>';
+    }
+    return '<div class="store-item"><span class="badge is-off">' + b.img + b.off + '"></span><span class="soon">Coming soon</span></div>';
+  }).join('');
+  Array.prototype.forEach.call(document.querySelectorAll('[data-store-cta]'), function (el) { el.innerHTML = html; });
+})();
+
 // Noted & Known site motion. Paper stop motion at 8 frames a second (one frame every 125 ms), no easing.
 // Everything is visible without this script: the styles only hide things when <html class="js"> is set.
 // Pressable things (links, buttons, the FAQ) stay on one smooth ease-in-out in the CSS.
