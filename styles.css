@@ -215,7 +215,7 @@ a.badge:focus-visible { outline: 4px solid var(--dk); outline-offset: 4px; }
 
 /* ---------- shared: two-column moments with a giant phone ---------- */
 .hd { margin-bottom: clamp(20px, 3vw, 40px); }
-.two { display: grid; gap: clamp(32px, 6vw, 96px); align-items: center; }
+.two { --tg: clamp(32px, 6vw, 96px); display: grid; gap: var(--tg); align-items: center; }
 .two .d1 { font-size: clamp(48px, 8.4vw, 124px); }
 @media (min-width: 900px) { .two { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); } .two-flip { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); } .two-flip .two-art { order: -1; } }
 @media (max-width: 899px) { .two-flip .two-art { order: 2; } }
@@ -242,7 +242,7 @@ a.badge:focus-visible { outline: 4px solid var(--dk); outline-offset: 4px; }
 .slip i { position: absolute; top: -7px; right: 18px; width: 18px; height: 18px; background: #FF7A1F; border-radius: 3px 6px 3px 5px; }
 .slip span { font: 500 17px/1 var(--text); color: var(--mid); }
 .slip b { font: 700 21px/1.2 var(--display); }
-.s1 { left: -14%; top: 10%; --dx: -40px; --dy: 0px; } .s2 { left: -20%; top: 44%; --dx: -40px; --dy: 0px; } .s3 { left: -10%; top: 76%; --dx: -40px; --dy: 0px; }
+.s1 { left: max(-14%, calc(14px - var(--tg))); top: 10%; --dx: -40px; --dy: 0px; } .s2 { left: max(-20%, calc(14px - var(--tg))); top: 44%; --dx: -40px; --dy: 0px; } .s3 { left: max(-10%, calc(14px - var(--tg))); top: 76%; --dx: -40px; --dy: 0px; }
 @media (max-width: 899px) { .s1 { left: -2%; } .s2 { left: -2%; } .s3 { left: -2%; } .slip b { font-size: 18px; } .slip { padding: 12px 16px 14px; max-width: 210px; } }
 
 /* ---------- 11. skins: six solid tiles, edge to edge ---------- */
