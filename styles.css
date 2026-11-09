@@ -136,30 +136,42 @@ html.static .mark path { opacity: 1 !important; animation: none !important; }
 .foot { position: relative; background: var(--paper); padding-block: 56px 72px; font-size: 18px; }
 .foot .in { display: flex; flex-wrap: wrap; gap: 20px 48px; align-items: center; justify-content: space-between; }
 .foot p { margin: 0; }
+.foot .marks { flex-basis: 100%; font-size: 14px; line-height: 1.5; color: var(--mid); max-width: 52em; }
 .foot nav { display: flex; gap: 0 28px; flex-wrap: wrap; }
 .foot nav a { display: inline-flex; min-height: 48px; align-items: center; }
 
 /* ---------- 1. hero ---------- */
 .hero { min-height: calc(var(--svh) * 100); padding-block: clamp(20px, 3vw, 40px) clamp(48px, 5vw, 72px); display: flex; align-items: center; }
-.hero-grid { display: grid; gap: clamp(32px, 5vw, 64px); align-items: center; width: 100%; }
+.hero-grid { --hg: clamp(32px, 5vw, 64px); display: grid; gap: var(--hg); align-items: center; width: 100%; }
 @media (min-width: 900px) { .hero-grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); } }
+.hero-text { position: relative; z-index: 3; }
 .hero .mark { width: clamp(72px, 9vw, 130px); height: auto; margin-bottom: clamp(12px, 2vw, 24px); display: block; }
 .hero h1 { margin-bottom: clamp(20px, 3vw, 36px); }
 .store { margin: clamp(24px, 3vw, 40px) 0 14px; font: 900 clamp(26px, 3.4vw, 46px)/1.15 var(--display); display: inline-block; background: #fff; color: var(--dk); padding: 0.45em 0.8em; border-radius: 14px 5px 16px 6px; transform: rotate(-1.2deg); }
-.hero-art { position: relative; justify-self: center; width: min(76vw, calc(var(--svh) * 40), 400px); }
-@media (min-width: 900px) { .hero-art { width: min(36vw, calc(var(--svh) * 40), 470px); justify-self: center; } }
+.hero-art { position: relative; justify-self: center; width: min(76vw, calc(var(--svh) * 40), 400px, 100%); }
+@media (min-width: 900px) { .hero-art { width: min(36vw, calc(var(--svh) * 40), 470px, 100%); justify-self: center; } }
 .hero-phone { width: 100%; --dy: 70px; --d: 0.25s; }
 .hshape { z-index: 0; }
-.h1s { --sf: #fff; width: 135%; aspect-ratio: 1; left: -36%; top: 16%; --d: 0.1s; }
+.h1s { --sf: #fff; width: 135%; aspect-ratio: 1; left: max(-36%, calc(28px - var(--hg))); top: 16%; --d: 0.1s; }
 .h2s { --sf: var(--dk); width: 52%; aspect-ratio: 1; right: -24%; top: -10%; --d: 0.4s; }
 .hero-phone { z-index: 1; }
-.slab { position: absolute; z-index: 2; left: -30%; bottom: 14%; background: #fff; color: var(--dk); padding: 0.4em 0.7em 0.5em; border-radius: 14px 5px 18px 6px; --d: 1.05s; --dy: -30px; }
+.slab { position: absolute; z-index: 2; left: max(-30%, calc(10px - var(--hg))); bottom: 14%; background: #fff; color: var(--dk); padding: 0.4em 0.7em 0.5em; border-radius: 14px 5px 18px 6px; --d: 1.05s; --dy: -30px; }
 .slab b { display: block; font: 900 clamp(34px, 5vw, 70px)/1 var(--display); }
 .slab span { display: block; font-size: clamp(16px, 1.4vw, 19px); }
 .faceb { position: absolute; z-index: 2; right: -22%; bottom: 34%; width: 38%; aspect-ratio: 1; --d: 0.85s; --dx: 30px; --dy: 40px; }
 .faceb .shape { position: absolute; inset: 0; width: 100%; height: 100%; --sf: #fff; }
 .faceb b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: 700 clamp(40px, 5vw, 76px)/1 var(--display); color: var(--ink); }
-@media (max-width: 899px) { .slab { left: -6%; } .faceb { right: -8%; } .h2s { right: -8%; } }
+@media (max-width: 899px) { .slab { left: -6%; } .faceb { right: -8%; } .h2s { right: -8%; top: -2%; } }
+
+/* ---------- store badges: --bh is the visible badge height. The Google PNG has 41/250 of padding on every side, so it is drawn larger and pulled back. ---------- */
+.stores { --bh: 52px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 18px 24px; margin: clamp(24px, 3vw, 40px) 0 14px; }
+.store-item { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.badge { display: block; height: var(--bh); line-height: 0; border-radius: 9px; }
+.badge img { height: var(--bh); width: auto; max-width: none; }
+.badge img.gp { height: calc(var(--bh) * 250 / 168); margin: calc(var(--bh) * -41 / 168); }
+a.badge:focus-visible { outline: 4px solid var(--dk); outline-offset: 4px; }
+.badge.is-off { opacity: 0.45; }
+.soon { font: 500 17px/1.2 var(--text); }
 
 /* ---------- 2. why ---------- */
 .why { padding-block: clamp(80px, 11vw, 170px); }
