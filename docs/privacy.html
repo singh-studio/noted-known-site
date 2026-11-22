@@ -35,13 +35,13 @@
 </header>
 <main id="main" class="doc">
   <div class="in">
-    <p class="updated">Last updated: November 9, 2026</p>
+    <p class="updated">Last updated: November 11, 2026</p>
     <h1>Privacy.</h1>
-    <p class="lede">Noted &amp; Known (formerly Little Things) keeps personal notes local. This page explains what the app stores, which permissions it can ask for, and what stays on your device.</p>
-    <ul class="toc"><li><a href="#short">At a glance</a></li><li><a href="#stored">What the app stores</a></li><li><a href="#permissions">Permissions</a></li><li><a href="#export">Export</a></li><li><a href="#analytics">Analytics</a></li><li><a href="#crash">Crash reports</a></li><li><a href="#limits">Important limits</a></li><li><a href="#contact">Contact</a></li></ul>
+    <p class="lede">Noted &amp; Known keeps personal notes local. This page explains what the app stores, which permissions it can ask for, and what stays on your device.</p>
+    <ul class="toc"><li><a href="#short">At a glance</a></li><li><a href="#stored">What the app stores</a></li><li><a href="#permissions">Permissions</a></li><li><a href="#export">Export</a></li><li><a href="#usage">Usage and crash reports</a></li><li><a href="#limits">Important limits</a></li><li><a href="#contact">Contact</a></li></ul>
 
           <section id="short"><h2>At a glance</h2>
-            <p>Your people, notes, moments, birthdays, and settings are stored on your device. There is no Noted &amp; Known cloud copy of your relationship data.</p>
+            <p>Your people, notes, moments, birthdays, and settings are stored on your device. There is no Noted &amp; Known cloud copy of your relationship data. The app sends nothing about how you use it unless you turn on &ldquo;Usage and crash reports&rdquo; in Settings, which is off when you install it.</p>
           </section>
 
           <section id="stored">
@@ -64,7 +64,7 @@
             <h3>Notifications</h3>
             <p>Noted &amp; Known can schedule local reminders for check-ins and birthdays. They&rsquo;re created by your device, not pushed from a server.</p>
             <h3>Contacts</h3>
-            <p>Noted &amp; Known asks for Contacts access only if you choose to import contacts. You choose which people to add, and the import is one-time &mdash; it copies the person&rsquo;s name, contact photo, and birthday into the local database on your device, and nothing is uploaded.</p>
+            <p>Noted &amp; Known asks for Contacts access only if you choose to import contacts. You choose which people to add, and the import is one-time. It copies the person&rsquo;s name, contact photo, and birthday into the local database on your device, and nothing is uploaded.</p>
             <h3>Photos</h3>
             <p>Noted &amp; Known may ask for photo library access if you choose a profile image. It doesn&rsquo;t scan your photo library or upload it to a server.</p>
           </section>
@@ -73,18 +73,15 @@
             <h2>Export</h2>
             <p>Export creates a point-in-time JSON snapshot of your app data. The file is plain text and isn&rsquo;t encrypted by Noted &amp; Known.</p>
             <p>Once you save or share an export outside the app, its privacy depends on where you put it. Treat it like sensitive personal data.</p>
-            <p>Noted &amp; Known doesn&rsquo;t provide its own cloud backup or restore. On iPhone, your local app data may be included in your own iCloud or computer backup &mdash; that backup is made and encrypted by Apple under your Apple Account, not by us. On Android, the app opts out of system auto-backup.</p>
+            <p>Noted &amp; Known doesn&rsquo;t provide its own cloud backup or restore. On iPhone, your local app data may be included in your own iCloud or computer backup, which is made and encrypted by Apple under your Apple Account, not by us. On Android, the app opts out of system auto-backup.</p>
           </section>
 
-          <section id="analytics">
-            <h2>Analytics</h2>
-            <p>The app sends basic product analytics. These events are privacy-bucketed — screen views, feature use, session length, build version, and count ranges. They never include names, note text, chronicle text, search text, birthdays, contact details, profile photos, or exports.</p>
-          </section>
-
-          <section id="crash">
-            <h2>Crash reports</h2>
-            <p>If Noted &amp; Known crashes, a crash report leaves your device so the bug can be fixed. A crash report contains the technical stack trace, the app version, your device model, and your OS version.</p>
-            <p>Crash reports never include your people, notes, photos, screenshots, your device&rsquo;s personal name, or any account identity &mdash; the app has no accounts. Crash reports are processed by Sentry on our behalf and are used only to diagnose and fix crashes.</p>
+          <section id="usage">
+            <h2>Usage and crash reports</h2>
+            <p>This is off when you install the app, and nothing about how you use it is sent anywhere until you turn it on. The switch is called &ldquo;Usage and crash reports&rdquo; and you&rsquo;ll find it in the app under You, then Settings, then Privacy.</p>
+            <p>When it&rsquo;s on, the app sends anonymous usage events, such as which screens get opened, which features get used, how long a session lasts, the app version and rough count ranges. These events are tied to a random id that the app makes the first time it sends one, and the id isn&rsquo;t connected to your name, your contacts or anything else about you. If the app crashes or freezes, it also sends a technical report with the stack trace, the app version, your device model and your OS version. Crash reports are processed by Sentry on our behalf and are used only to diagnose and fix problems.</p>
+            <p>None of this ever includes your people, notes, chronicles, search text, birthdays, contact details, photos, screenshots, exports or your device&rsquo;s personal name, and the app has no accounts to identify you by.</p>
+            <p>When you turn the switch off, the app stops sending, discards the random id and deletes any crash reports still waiting on your device. Clear all data turns it off too. If you&rsquo;d like us to delete what we received while it was on, see Deleting your data below.</p>
           </section>
 
           <section id="limits">
@@ -101,12 +98,12 @@
           <section id="delete">
             <h2>Deleting your data</h2>
             <p>Everything you write in Noted &amp; Known stays on your device. To delete it, open the app, go to You, then Settings, then Clear all data, or delete the app. Exported files you saved elsewhere aren’t affected.</p>
-            <p>The app also sends anonymous crash reports and usage events that aren’t linked to you. To have the ones from your install deleted, email <a href="mailto:kris@singhstudio.co.nz">kris@singhstudio.co.nz</a> and we’ll delete them within 30 days. Nothing is kept after that.</p>
+            <p>If you&rsquo;ve turned on Usage and crash reports, the app will have sent anonymous usage events and crash reports that aren’t linked to you. To have the ones from your install deleted, email <a href="mailto:kris@singhstudio.co.nz">kris@singhstudio.co.nz</a> and we’ll delete them within 30 days. Nothing is kept after that.</p>
           </section>
 
           <section id="contact">
             <h2>Contact</h2>
-            <p>Questions about this policy, or want us to delete crash reports or analytics tied to your install? Email <a href="mailto:kris@singhstudio.co.nz">kris@singhstudio.co.nz</a>.</p>
+            <p>Questions about this policy, or want us to delete usage events or crash reports from your install? Email <a href="mailto:kris@singhstudio.co.nz">kris@singhstudio.co.nz</a>.</p>
           </section>
 
           
